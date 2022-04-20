@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Маршрутне орієнтування на дорогах України: системний путівник</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Це путівник у проєктуванні систем маршрутного орієнтування. Положення, які ми в ньому описуємо, мають допомагати виробленню рішень. Ми систематизували все різноманіття дорожніх ситуацій до кількох типових ділянок, а різноманіття правил — до кількох зрозумілих принципів.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <!-- Theme: Defaults -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dmhendricks/bootstrap-grid-css@4.1.3/dist/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="//agentyzmin.github.io/Road-UA-Font/fonts/road-ua.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#01489c">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#01489c">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+
+
+<!-- FEEDBACK -->
+
+<script type="text/javascript">
+
+function showDiv() {
+   document.getElementById('modal').style.display = "block";
+}
+
+function hideDiv() {
+   document.getElementById('modal').style.display = "none";
+}
+
+</script>
+
+
+<div class="feedback-popup" id="modal" style="display: none;">
+  
+  <a style="cursor: pointer;" onclick="hideDiv()">
+    <div class="close">
+    <svg class="w-100" viewBox="0 0 31.11 31.11">
+      <rect x="13.56" y="-4.44" transform="matrix(0.7071 0.7071 -0.7071 0.7071 15.5563 -6.4437)" fill="#8F9099" width="4" height="40"/>
+      <rect x="13.56" y="-4.44" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 37.5564 15.5563)" fill="#8F9099" width="4" height="40"/>
+    </svg>
+  </div>
+  </a>
+  
+  <h2>Зворотній зв’язок</h2>
+  
+  <p>Заохочуємо до&nbsp;обговорення через цю форму або через пошту <a href="mailto:road@a3.kyiv.ua">road@a3.kyiv.ua</a>.</p>
+
+
+  <form action="https://mailthis.to/road@a3.kyiv.ua"
+    method="POST" encType="multipart/form-data" data-netlify="true" name="road-feedback">
+        
+        <input type="hidden" name="_subject" value="Feedback">
+        
+        <div class="form-line">
+          <label for="message" class="">Повідомлення</label>
+          <textarea name="message" rows="6" style="width: 100%;"></textarea>
+        </div>
+
+        <div class="form-line">
+          <label for="file" class="line">Прикласти файл:</label>
+          <input type="file" id="file" class="file" name="file">
+        </div>
+
+        <div class="form-line">
+          <label for="email" class="line">Пошта:</label>
+          <input type="email" class="form-control" name="_replyto">
+        </div>
+
+        <input type="hidden" name="_honeypot" value="">
+        
+        <input type="hidden" name="_confirmation" value="Дякуємо за зворотній зв’язок! Слідкуйте за ходом проекту на сайті — a3.kyiv.ua/projects/road-wayfinding , у фейсбуці та телеграмі.">
+        
+        <button type="submit" class="">Надіслати</button>
+
+      </form>
+
+</div>
+
+
+<a style="cursor: pointer;" onclick="showDiv()">
+  <div class="feedback-button">
+  <img width="100%" src="assets/icons/mail.svg">
+  </div>
+</a>
+
+
+<!-- FEEDBACK END -->
+
+
+<div id="app"></div>
+<script>
+  window.$docsify = {
+    homepage: 'index.md',
+    loadSidebar: '_sidebar.md',
+    autoHeader: true,
+    // search: 'auto',
+    search: {
+      paths: 'auto',
+      placeholder: 'Пошук',
+      depth: 2,
+      noData: 'Нічого не знайшли',
+    },
+    // basePath: 'roadsign.a3.kyiv.ua/guide',
+    // name: 'Путівник',
+    // logo: '/_media/icon.svg',
+    // themeColor: '#3F51B5',
+    // hideSidebar: true,
+    // loadNavbar: true,
+    // sidebarDisplayLevel: 1,
+    notFoundPage: '404.md',
+    themeable: {
+        readyTransition : true, // default
+        responsiveTables: true  // default
+    },
+    alias: {
+      '/.*/_sidebar.md'     : '/_sidebar.md',
+      '/docs/_sidebar.md'   : '/_sidebar.md'
+    },
+    ga: 'G-KX64DPWJ1Q',
+    pagination: {
+      previousText: 'Назад',
+      nextText: 'Далі',
+      // crossChapter: true,
+      // crossChapterText: true,
+    },
+  }
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!-- docsify-themeable (latest v0.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+</body>
+</html>

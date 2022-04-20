@@ -1,0 +1,814 @@
+:root {
+
+/* App
+============================================================================= */
+
+    /* Color
+    ------------------------------------------------------------------------- */
+    /* Monochrome */
+    --mono-hue        : 113;
+    --mono-saturation : 0%;
+
+    /* Monochrome shades (darker) and tints (lighter) */
+    --mono-shade3     : hsl(var(--mono-hue), var(--mono-saturation), 20%); /* #333333 */
+    --mono-shade2     : hsl(var(--mono-hue), var(--mono-saturation), 30%); /* #4d4d4d */
+    --mono-shade1     : hsl(var(--mono-hue), var(--mono-saturation), 40%); /* #666666 */
+    --mono-base       : hsl(var(--mono-hue), var(--mono-saturation), 50%); /* #808080 */
+    --mono-tint1      : hsl(var(--mono-hue), var(--mono-saturation), 70%); /* #b3b3b3 */
+    --mono-tint2      : hsl(var(--mono-hue), var(--mono-saturation), 89%); /* #e3e3e3 */
+    --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
+
+    /* Theme */
+    --theme-hue       : 204;
+    --theme-saturation: 90%;
+    --theme-lightness : 45%;
+    --theme-color     : hsl(var(--theme-hue), var(--theme-saturation), var(--theme-lightness));
+
+    /* Typography
+    ------------------------------------------------------------------------- */
+    /* Modular Scale */
+    --modular-scale   : 1.333;
+
+    /* Module Scale Calculations (do not edit these) */
+    --modular-scale--2: calc(var(--modular-scale--1) / var(--modular-scale));
+    --modular-scale--1: calc(var(--modular-scale-1) / var(--modular-scale));
+    --modular-scale-1 : 1rem;
+    --modular-scale-2 : calc(var(--modular-scale-1) * var(--modular-scale));
+    --modular-scale-3 : calc(var(--modular-scale-2) * var(--modular-scale));
+    --modular-scale-4 : calc(var(--modular-scale-3) * var(--modular-scale));
+    --modular-scale-5 : calc(var(--modular-scale-4) * var(--modular-scale));
+
+    /* Font size */
+    --font-size-xxxl  : var(--modular-scale-5);
+    --font-size-xxl   : var(--modular-scale-4);
+    --font-size-xl    : var(--modular-scale-3);
+    --font-size-l     : var(--modular-scale-2);
+    --font-size-m     : var(--modular-scale-1);
+    --font-size-s     : var(--modular-scale--1);
+    --font-size-xs    : var(--modular-scale--2);
+
+    /* Utility
+    ------------------------------------------------------------------------- */
+    /* Borders */
+    --border-radius-s : ;
+    --border-radius-m : ;
+    --border-radius-l : ;
+
+    /* Animations and transitions */
+    --duration-slow   : 1s;
+    --duration-medium : 0.5s;
+    --duration-fast   : 0.25s;
+
+    /* Misc
+    ------------------------------------------------------------------------- */
+    /* Spinner */
+    --spinner-size               : 60px;
+    --spinner-track-width        : 4px;
+    --spinner-track-color        : rgba(0, 0, 0, 0.15);
+    --spinner-transition-duration: var(--duration-medium);
+
+
+/* Base
+============================================================================= */
+    --base-background-color: #fff;
+    --base-color           : black;
+    --base-font-family     : "RoadUA", sans-serif;
+    --base-font-size       : 1.2em;
+    --base-font-weight     : normal;
+    --base-letter-spacing  : ;
+    --base-line-height     : 1.5;
+
+    /* Emoji */
+    --emoji-size           : calc(var(--base-line-height) * 1em);
+
+    /* Horizontal Rule */
+    --hr-border            : 1px solid var(--mono-tint2);
+
+    /* Mark */
+    --mark-background      : #ffecb3;
+    --mark-color           : ;
+
+    /* Preformatted */
+    --pre-font-family      : var(--code-font-family);
+    --pre-font-size        : var(--code-font-size);
+    --pre-font-weight      : normal;
+    --pre-line-height      : ;
+
+    /* Selection */
+    --selection-color      : #b4d5fe;
+
+    /* Small */
+    --small-font-size      : var(--font-size-s);
+
+    /* Strong */
+    --strong-color         : var(--heading-color);
+    --strong-font-weight   : 800;
+
+    /* Sub/Sup */
+    --subsup-font-size     : var(--font-size-s);
+
+
+/* Content
+============================================================================= */
+
+    --content-max-width                 : 45em;
+
+    /* Blockquote */
+    --blockquote-background             : var(--mono-tint3);
+    --blockquote-border-color           : ;
+    --blockquote-border-style           : solid;
+    --blockquote-border-width           : ;
+    --blockquote-border-radius          : var(--border-radius-m);
+    --blockquote-color                  : ;
+    --blockquote-em-font-family         : ;
+    --blockquote-em-font-size           : ;
+    --blockquote-em-font-style          : ;
+    --blockquote-em-font-weight         : normal;
+    --blockquote-font-family            : ;
+    --blockquote-font-size              : ;
+    --blockquote-font-style             : ;
+    --blockquote-font-weight            : normal;
+    --blockquote-quotes-close           : ;
+    --blockquote-quotes-color           : ;
+    --blockquote-quotes-font-family     : ;
+    --blockquote-quotes-font-size       : ;
+    --blockquote-quotes-open            : ;
+
+    /* Code */
+    --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    --code-font-size                    : calc(var(--font-size-m) * 0.95);
+    --code-font-weight                  : normal;
+    --code-tab-size                     : 4;
+
+    --code-block-border-radius          : var(--border-radius-m);
+    --code-block-line-height            : var(--base-line-height);
+    --code-block-margin                 : 1em 0;
+    --code-block-padding                : 1.75em 1.5em 1.5em 1.5em;
+
+    --code-inline-background            : var(--code-theme-background);
+    --code-inline-border-radius         : var(--border-radius-s);
+    --code-inline-color                 : var(--code-theme-text);
+    --code-inline-margin                : 0 0.15em;
+    --code-inline-padding               : 0.125em 0.4em;
+
+    --code-theme-background             : var(--mono-tint3);
+    --code-theme-comment                : ;
+    --code-theme-function               : ;
+    --code-theme-keyword                : ;
+    --code-theme-operator               : ;
+    --code-theme-punctuation            : ;
+    --code-theme-selection              : ;
+    --code-theme-selector               : ;
+    --code-theme-tag                    : ;
+    --code-theme-text                   : ;
+    --code-theme-variable               : ;
+
+    /* Headings */
+    --heading-color                     : var(--mono-shade3);
+    --heading-font-family               : ;
+    --heading-font-weight               : 800;
+    --heading-margin                    : 1.5rem 0 0;
+    --heading-padding                   : ;
+
+    --heading-h1-border-color           : ;
+    --heading-h1-border-style           : ;
+    --heading-h1-border-width           : ;
+    --heading-h1-color                  : ;
+    --heading-h1-font-family            : ;
+    --heading-h1-font-size              : var(--font-size-xxl);
+    --heading-h1-font-weight            : 800;
+    --heading-h1-margin                 : ;
+    --heading-h1-padding                : ;
+
+    --heading-h2-border-color           : ;
+    --heading-h2-border-style           : ;
+    --heading-h2-border-width           : ;
+    --heading-h2-color                  : ;
+    --heading-h2-font-family            : ;
+    --heading-h2-font-size              : var(--font-size-xl);
+    --heading-h2-font-weight            : 800;
+    --heading-h2-margin                 : ;
+    --heading-h2-padding                : ;
+
+    --heading-h3-border-color           : ;
+    --heading-h3-border-style           : ;
+    --heading-h3-border-width           : ;
+    --heading-h3-color                  : ;
+    --heading-h3-font-family            : ;
+    --heading-h3-font-size              : var(--font-size-l);
+    --heading-h3-font-weight            : 800;
+    --heading-h3-margin                 : ;
+    --heading-h3-padding                : ;
+
+    --heading-h4-border-color           : ;
+    --heading-h4-border-style           : ;
+    --heading-h4-border-width           : ;
+    --heading-h4-color                  : ;
+    --heading-h4-font-family            : ;
+    --heading-h4-font-size              : var(--font-size-m);
+    --heading-h4-font-weight            : 800;
+    --heading-h4-margin                 : ;
+    --heading-h4-padding                : ;
+
+    --heading-h5-border-color           : ;
+    --heading-h5-border-style           : ;
+    --heading-h5-border-width           : ;
+    --heading-h5-color                  : ;
+    --heading-h5-font-family            : ;
+    --heading-h5-font-size              : var(--font-size-s);
+    --heading-h5-font-weight            : 800;
+    --heading-h5-margin                 : ;
+    --heading-h5-padding                : ;
+
+    --heading-h6-border-color           : ;
+    --heading-h6-border-style           : solid;
+    --heading-h6-border-width           : ;
+    --heading-h6-color                  : ;
+    --heading-h6-font-family            : ;
+    --heading-h6-font-size              : var(--font-size-xs);
+    --heading-h6-font-weight            : ;
+    --heading-h6-margin                 : ;
+    --heading-h6-padding                : ;
+
+    /* Keyboard */
+    --kbd-background                    : var(--mono-tint3);
+    --kbd-border                        : ;
+    --kbd-border-radius                 : var(--border-radius-m);
+    --kbd-color                         : ;
+    --kbd-font-size                     : ;
+    --kbd-margin                        : 0 0.3em;
+    --kbd-min-width                     : 2.5em;
+    --kbd-padding                       : 0.65em 0.5em;
+
+    /* Links */
+    --link-border-bottom                : ;
+    --link-border-bottom--hover         : ;
+    --link-color                        : ;
+    --link-color--hover                 : ;
+    --link-text-decoration              : underline;
+    --link-text-decoration--hover       : ;
+    --link-text-decoration-color        : ;
+    --link-text-decoration-color--hover : ;
+
+    /* Notice */
+    --notice-background                 : var(--mono-tint3);
+    --notice-border-color               : ;
+    --notice-border-radius              : var(--border-radius-m);
+    --notice-border-style               : solid;
+    --notice-border-width               : ;
+    --notice-color                      : ;
+    --notice-font-family                : ;
+    --notice-font-weight                : normal;
+    --notice-padding                    : 1em 1.5em;
+
+    /* Notice - Pseudo */
+    --notice-before-background          : ;
+    --notice-before-border-radius       : ;
+    --notice-before-color               : ;
+    --notice-before-content             : ;
+    --notice-before-font-family         : ;
+    --notice-before-font-size           : ;
+    --notice-before-font-weight         : normal;
+    --notice-before-height              : ;
+    --notice-before-left                : ;
+    --notice-before-line-height         : ;
+    --notice-before-margin              : ;
+    --notice-before-padding             : ;
+    --notice-before-position            : ;
+    --notice-before-top                 : ;
+    --notice-before-width               : ;
+
+    /* Notice - Important */
+    --notice-important-background       : ;
+    --notice-important-border-color     : ;
+    --notice-important-border-style     : ;
+    --notice-important-border-width     : ;
+    --notice-important-color            : ;
+
+    /* Notice - Important Pseudo */
+    --notice-important-before-background: ;
+    --notice-important-before-color     : ;
+    --notice-important-before-content   : ;
+
+    /* Notice - Tip */
+    --notice-tip-background             : ;
+    --notice-tip-border-color           : ;
+    --notice-tip-border-style           : ;
+    --notice-tip-border-width           : ;
+    --notice-tip-color                  : ;
+
+    /* Notice - Tip Pseudo */
+    --notice-tip-before-background      : ;
+    --notice-tip-before-color           : ;
+    --notice-tip-before-content         : ;
+
+    /* Tables */
+    --table-border                      : 0.0em;
+    --table-color                       : var(--mono-shade4);
+
+    --table-body-border-color           : var(--table-color);
+    --table-body-border-width           : var(--table-border);
+    --table-cell-border-color           : var(--table-color);
+    --table-cell-border-width           : var(--table-border);
+    --table-cell-padding                : 0.5em 0.25em;
+    --table-head-background             : ;
+    --table-head-border-color           : var(--table-color);
+    --table-head-border-width           : var(--table-border);
+    --table-head-font-weight            : var(--strong-font-weight);
+    --table-row-even-background         : ;
+    --table-row-odd-background          : ;
+
+
+/* Navbar
+============================================================================= */
+
+    /* Root */
+    --navbar-root-background                        : ;
+    --navbar-root-background--active                : ;
+    --navbar-root-background--hover                 : ;
+    --navbar-root-border-color                      : ;
+    --navbar-root-border-color--active              : ;
+    --navbar-root-border-color--hover               : ;
+    --navbar-root-border-radius                     : ;
+    --navbar-root-border-style                      : solid;
+    --navbar-root-border-style--active              : ;
+    --navbar-root-border-style--hover               : ;
+    --navbar-root-border-width                      : ;
+    --navbar-root-color                             : ;
+    --navbar-root-color--active                     : ;
+    --navbar-root-color--hover                      : ;
+    --navbar-root-margin                            : 0 0 0 1.5em;
+    --navbar-root-padding                           : ;
+    --navbar-root-transition                        : all var(--duration-fast);
+    --navbar-root-text-decoration                   : ;
+    --navbar-root-text-decoration--active           : ;
+    --navbar-root-text-decoration--hover            : ;
+    --navbar-root-text-decoration-color             : ;
+    --navbar-root-text-decoration-color--active     : ;
+    --navbar-root-text-decoration-color--hover      : ;
+
+    /* Menus */
+    --navbar-menu-background                        : var(--base-background-color);
+    --navbar-menu-border-color                      : ;
+    --navbar-menu-border-radius                     : var(--border-radius-m);
+    --navbar-menu-border-width                      : ;
+    --navbar-menu-box-shadow                        : rgba(45,45,45,0.05) 0px 0px 1px, rgba(49,49,49,0.05) 0px 1px 2px, rgba(42,42,42,0.05) 0px 2px 4px, rgba(32,32,32,0.05) 0px 4px 8px, rgba(49,49,49,0.05) 0px 8px 16px, rgba(35,35,35,0.05) 0px 16px 32px;
+    --navbar-menu-padding                           : 0.5em;
+    --navbar-menu-transition                        : all var(--duration-fast);
+
+    /* Menu Root */
+    --navbar-menu-root-background                   : ;
+    --navbar-menu-root-background--active           : ;
+    --navbar-menu-root-background--hover            : ;
+    --navbar-menu-root-padding                      : ;
+
+    /* Menu Links */
+    --navbar-menu-link-background                   : ;
+    --navbar-menu-link-background--active           : ;
+    --navbar-menu-link-background--hover            : ;
+    --navbar-menu-link-border-color                 : ;
+    --navbar-menu-link-border-color--active         : ;
+    --navbar-menu-link-border-color--hover          : ;
+    --navbar-menu-link-border-radius                : ;
+    --navbar-menu-link-border-style                 : solid;
+    --navbar-menu-link-border-style--active         : ;
+    --navbar-menu-link-border-style--hover          : ;
+    --navbar-menu-link-border-width                 : ;
+    --navbar-menu-link-color                        : ;
+    --navbar-menu-link-color--active                : ;
+    --navbar-menu-link-color--hover                 : ;
+    --navbar-menu-link-margin                       : 0.75em 0.5em;
+    --navbar-menu-link-padding                      : 0.2em 0;
+    --navbar-menu-link-text-decoration              : ;
+    --navbar-menu-link-text-decoration--active      : ;
+    --navbar-menu-link-text-decoration--hover       : ;
+    --navbar-menu-link-text-decoration-color        : ;
+    --navbar-menu-link-text-decoration-color--active: ;
+    --navbar-menu-link-text-decoration-color--hover : ;
+
+
+/* Sidebar
+============================================================================= */
+
+    --sidebar-background                          : var(--base-background-color);
+    --sidebar-border-color                        : ;
+    --sidebar-border-width                        : 0;
+    --sidebar-padding                             : 0 25px;
+    --sidebar-transition-duration                 : var(--duration-fast);
+    --sidebar-width                               : 20rem;
+
+    /* Name */
+    --sidebar-name-background                     : ;
+    --sidebar-name-color                          : ;
+    --sidebar-name-font-family                    : ;
+    --sidebar-name-font-size                      : var(--font-size-l);
+    --sidebar-name-font-weight                    : normal;
+    --sidebar-name-margin                         : 1.5rem 0 0;
+    --sidebar-name-padding                        : ;
+    --sidebar-name-text-align                     : center;
+
+    /* Nav Headings */
+    --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
+    --sidebar-nav-strong-border-width             : ;
+    --sidebar-nav-strong-color                    : var(--heading-color);
+    --sidebar-nav-strong-font-size                : ;
+    --sidebar-nav-strong-font-weight              : var(--strong-font-weight);
+    --sidebar-nav-strong-margin                   : 1.5em 0 0.5em;
+    --sidebar-nav-strong-padding                  : 0;
+    --sidebar-nav-strong-text-transform           : ;
+
+    /* Nav Container */
+    --sidebar-nav-background                      : ;
+    --sidebar-nav-indent                          : 1em;
+    --sidebar-nav-margin                          : 0;
+    --sidebar-nav-padding                         : 1em 0;
+
+    /* Nav Links */
+    --sidebar-nav-link-background-color           : ;
+    --sidebar-nav-link-background-color--active   : ;
+    --sidebar-nav-link-background-color--hover    : ;
+    --sidebar-nav-link-background-image           : ;
+    --sidebar-nav-link-background-image--active   : ;
+    --sidebar-nav-link-background-image--hover    : ;
+    --sidebar-nav-link-background-position        : ;
+    --sidebar-nav-link-background-position--active: ;
+    --sidebar-nav-link-background-position--hover : ;
+    --sidebar-nav-link-background-repeat          : ;
+    --sidebar-nav-link-background-size            : ;
+    --sidebar-nav-link-background-size--active    : ;
+    --sidebar-nav-link-background-size--hover     : ;
+    --sidebar-nav-link-border-color               : ;
+    --sidebar-nav-link-border-color--active       : ;
+    --sidebar-nav-link-border-color--hover        : ;
+    --sidebar-nav-link-border-radius              : ;
+    --sidebar-nav-link-border-style               : solid;
+    --sidebar-nav-link-border-style--active       : ;
+    --sidebar-nav-link-border-style--hover        : ;
+    --sidebar-nav-link-border-width               : 0;
+    --sidebar-nav-link-border-width--active       : ;
+    --sidebar-nav-link-border-width--hover        : ;
+    --sidebar-nav-link-color                      : var(--base-color);
+    --sidebar-nav-link-color--active              : ;
+    --sidebar-nav-link-color--hover               : ;
+    --sidebar-nav-link-font-weight                : normal;
+    --sidebar-nav-link-font-weight--active        : 800;
+    --sidebar-nav-link-font-weight--hover         : ;
+    --sidebar-nav-link-margin                     : ;
+    --sidebar-nav-link-padding                    : 0.25em 0;
+    --sidebar-nav-link-text-decoration            : ;
+    --sidebar-nav-link-text-decoration--active    : none;
+    --sidebar-nav-link-text-decoration--hover     : underline;
+    --sidebar-nav-link-text-decoration-color      : ;
+    --sidebar-nav-link-transition                 : ;
+
+    /* Nav Links - Pseudo Content */
+    --sidebar-nav-link-before-content             : ;
+    --sidebar-nav-link-before-content--active     : ;
+    --sidebar-nav-link-before-content-l1          : ;
+    --sidebar-nav-link-before-content-l1--active  : ;
+    --sidebar-nav-link-before-content-l2          : ;
+    --sidebar-nav-link-before-content-l2--active  : ;
+    --sidebar-nav-link-before-content-l3          : ;
+    --sidebar-nav-link-before-content-l3--active  : ;
+    --sidebar-nav-link-before-content-l4          : ;
+    --sidebar-nav-link-before-content-l4--active  : ;
+
+    /* Nav Links - Pseudo Style */
+    --sidebar-nav-link-before-color               : ;
+    --sidebar-nav-link-before-color--active       : ;
+    --sidebar-nav-link-before-color-l1            : ;
+    --sidebar-nav-link-before-color-l1--active    : ;
+    --sidebar-nav-link-before-color-l2            : ;
+    --sidebar-nav-link-before-color-l2--active    : ;
+    --sidebar-nav-link-before-color-l3            : ;
+    --sidebar-nav-link-before-color-l3--active    : ;
+    --sidebar-nav-link-before-color-l4            : ;
+    --sidebar-nav-link-before-color-l4--active    : ;
+    --sidebar-nav-link-before-margin              : 0 0.35em 0 0;
+    --sidebar-nav-link-before-margin-l1           : ;
+    --sidebar-nav-link-before-margin-l2           : ;
+    --sidebar-nav-link-before-margin-l3           : ;
+    --sidebar-nav-link-before-margin-l4           : ;
+
+    /* Nav Page Links */
+    --sidebar-nav-pagelink-background-image             : ;
+    --sidebar-nav-pagelink-background-image--active     : ;
+    --sidebar-nav-pagelink-background-image--collapse   : ;
+    --sidebar-nav-pagelink-background-image--loaded     : ;
+    --sidebar-nav-pagelink-background-position          : ;
+    --sidebar-nav-pagelink-background-position--active  : ;
+    --sidebar-nav-pagelink-background-position--collapse: ;
+    --sidebar-nav-pagelink-background-position--loaded  : ;
+    --sidebar-nav-pagelink-background-repeat            : no-repeat;
+    --sidebar-nav-pagelink-background-size              : ;
+    --sidebar-nav-pagelink-padding                      : ;
+    --sidebar-nav-pagelink-transition                   : var(--sidebar-nav-link-transition);
+
+    /* Toggle */
+    --sidebar-toggle-background                   : ;
+    --sidebar-toggle-border-color                 : ;
+    --sidebar-toggle-border-radius                : var(--border-radius-s);
+    --sidebar-toggle-border-style                 : solid;
+    --sidebar-toggle-border-width                 : 0;
+    --sidebar-toggle-height                       : 36px;
+    --sidebar-toggle-icon-color                   : var(--base-color);
+    --sidebar-toggle-icon-height                  : 10px;
+    --sidebar-toggle-icon-stroke-width            : 1px;
+    --sidebar-toggle-icon-width                   : 16px;
+    --sidebar-toggle-offset-left                  : 0;
+    --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2) + 0.6em);
+    --sidebar-toggle-width                        : 44px;
+
+
+    /* Search */
+
+    --search-input-font-size                      : 14px;
+    --search-result-item-font-size                : var(--search-input-font-size);
+    --search-result-item-font-weight              : ;
+    --search-result-heading-font-size             : ;
+    --search-result-heading-font-weight           : 800;
+
+    --search-input-margin                         : ;
+    --search-input-background-color               : ;
+    --search-input-border-width                   : 1px;
+    --search-input-border-style                   : solid;
+    --search-input-border-color                   : #ccc;
+    --search-input-border-radius                  : 0.25em;
+
+
+    /* Pagination */
+/*    --pagination-border-top: 1px solid var(--mono-tint2);
+    --pagination-chevron-height: 0.8em;
+    --pagination-chevron-stroke: currentColor;
+    --pagination-chevron-stroke-linecap: round;
+    --pagination-chevron-stroke-width: 1px;*/
+    --pagination-label-font-size: var(--font-size-s);
+    --pagination-title-font-size: var(--font-size-m)
+
+}
+
+.markdown-section figure, .markdown-section p {
+    margin: 0.2em 0 1em 0;
+}
+
+.markdown-section ol, .markdown-section ul {
+    margin: 0 0 1em 0;
+}
+
+.markdown-section p ~ ul {
+    margin: 0 0 1.5em 0;
+}
+
+.markdown-section h1 {
+    line-height: 1.2em;
+    margin: 0 0 0.75em 0;
+}
+
+.markdown-section h2 {
+    line-height: 1.2em;
+    margin-top: 2em;
+}
+
+button {
+    font-weight: 700;
+    color: var(--base-background-color);
+    background-color: var(--base-color);                
+
+    border: none;
+    border-radius: 0.1em;
+
+    padding: 0.5em 1em 0.5em;
+}
+
+
+/* sidebar */
+.sidebar-nav {
+    font-size: 0.75em;
+}
+
+.sidebar-nav li, .sidebar-nav ul  {
+    margin: 0.25em 0 0.35em 0;
+}
+
+li.active {
+    /*    
+    border: 1px solid #E2DFDD;
+    border-radius: 0.2em;
+    */
+}
+
+p.caption {
+    font-size: var(--font-size-s);
+    margin: 0;
+    padding: 0;
+}
+
+p.caption + p {
+    margin-top: 2em;
+}
+
+
+
+.search input {
+    border-radius: 0.25em;
+}
+
+.sidebar .search .clear-button {
+    line-height: 0;
+}
+
+/* Paragraph numbers */
+@media screen and (min-width: 600px) {
+    .p-number {
+        position: absolute;
+        font-size: 0.8em;
+        /*left: -1em;*/
+        transform: translate(-4em,0.2em);
+    }
+}
+
+
+.road-sign-bg {
+  background-color: #033878;
+  color: #fff;
+}
+
+/*Road Numbers*/
+
+.road-num {
+  padding: 0.05em 0.25em 0 0.27em; 
+  margin: 0 0.1em;
+  font-weight: 600; 
+  border-radius: 0.25em;
+  color:#FFF; 
+  font-size: smaller; 
+  text-transform: uppercase; 
+  white-space: nowrap;
+/*  border: solid 0.11em; 
+  border-color: #FFF; */
+}
+
+.road-num.red,.road-num.n,.road-num.m {
+  background-color: #E40428;
+}
+
+.road-num.green,.road-num.e {
+  background-color: #3AAA35;
+}
+
+.road-num.blue, .road-num.r, .road-num.t  {
+  background-color: #033878;
+}
+
+.road-num.yellow {
+  background-color: #FFE054; 
+  padding: 0.25em 0.25em 0.05em; 
+  border: solid 0.11em; 
+  border-color: #000; 
+  color: #000;
+}
+
+.road-num.transp {
+  background-color:none; 
+  padding: 0.25em 0.25em 0.05em; 
+  border: solid 0.11em; 
+  border-color: #033878; 
+  color: #033878;
+}
+
+.road-num.transp.w {
+  background-color:none; 
+  padding: 0.25em 0.25em 0.05em; 
+  border: solid 0.11em; 
+  border-color: #fff; 
+  color: #fff;
+}
+
+
+p + ul, p + ol {
+    margin-top: -1rem !important;
+}
+
+.pagination-item--previous, .pagination-item--next {
+    width: 50%;
+}
+
+.pagination-item-title {
+    line-height: 1.2;
+    margin-top: 0.2rem;
+}
+
+
+
+.bg-light {
+    background-color: #F5F5F8;
+    width: 100%;
+    padding: 1em 1.2em 1.1em;
+}
+
+.bg-light > p {
+    margin: 0 0 0.5em 0;
+}
+
+.highlight {
+    background-color: #FFE8B0; 
+    padding: 0 0.2em 0.15em;
+}
+
+.left-col {
+    float: left;
+    margin-right: 1em;
+    width: 100px;
+    min-height: 100%;
+}
+
+
+/* FEEDBACK */
+
+.feedback-button {
+    position: fixed;
+    /*background-color: #32DC77;*/
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    top: 90%;
+    right: 0;
+    color: #FFF;
+    z-index: 888;
+    padding: 9px 12px 8px;
+    margin: 1em 0 0 0;
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+}
+
+.feedback-popup {
+    font-size: 0.9em;
+    
+    background-color: hsla(240, 18%, 97%, 0.9);
+    width: 30em;
+    /*display: none;*/
+    
+    position: fixed;
+    right: 0;
+    bottom: 1em;
+    z-index: 999;
+    
+    padding: 1.5em 2em;
+    
+    border-radius: 0.1em;
+    box-shadow: 0 1em 1em hsla(0, 0%, 0%, 0.2);
+}
+
+.feedback-popup > * {
+    margin: 0;
+    padding: 0;
+}
+.feedback-popup > h2 {
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+label.line {
+    float: left;
+    padding: 0.2em 0 0 0;
+    margin: 0 0.25em 0 0;
+}
+
+input, textarea {
+    border: 1px solid #d0d0d0;
+    border-radius: 0.1em;
+}
+
+.form-line {
+    margin-bottom: 1em;
+}
+
+/*input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}*/
+
+input[type="file"] {
+    display: inline-block;
+    border: none;
+    width: 15em;
+    top: -1em;
+}
+
