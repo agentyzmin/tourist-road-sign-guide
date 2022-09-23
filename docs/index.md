@@ -27,7 +27,7 @@
   </div>
 
   <div class="right-col">
-    <p>Путівник можна також завантажити у&nbsp;вигляді PDF.</p>
+    <p>Путівник можна завантажити у&nbsp;вигляді PDF.</p>
     <a href="/PDF/DART-TouristRoadSigns-Guide-v.1.0.pdf" target="_blank" style="font-weight: 700;">
       <img height="24" src="assets/img/filetype-pdf.svg" style="margin-bottom: -0.2em; margin-right: 0.2em;">Завантажити
     </a>
