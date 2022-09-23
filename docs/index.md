@@ -18,11 +18,11 @@
 
 
 
-<div class="bg-light" style="min-height: 180px;">
+<div class="bg-light" style="min-height: 180px; margin: 4em 0 6em 0;">
 
   <div class="left-col">
     <a href="/PDF/DART-TouristRoadSigns-Guide-v.1.0.pdf" target="_blank">
-      <img src="assets/img/DART-TouristRoadSigns-Guide-Cover.jpg" class="">
+      <img src="assets/img/DART-TouristRoadSigns-Guide-Mockup.png" class="">
     </a>
   </div>
 
