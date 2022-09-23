@@ -701,9 +701,12 @@ p + ul, p + ol {
 
 
 .bg-light {
-    background-color: #F5F5F8;
+    /*background-image: url("/assets/img/endpaper-pattern-filled@4x.png");*/
+    /*background-size: 25%;*/
+    background-color: hsla(30, 26%, 85%, 0.35);
     width: 100%;
     padding: 1em 1.2em 1.1em;
+    border-radius: 0.7em;
 }
 
 .bg-light > p {
@@ -720,6 +723,9 @@ p + ul, p + ol {
     margin-right: 1em;
     width: 100px;
     min-height: 100%;
+
+    border-radius: 0.2em;
+    box-shadow: 2px 0 8px rgba(0,0,0,25%);
 }
 
 
