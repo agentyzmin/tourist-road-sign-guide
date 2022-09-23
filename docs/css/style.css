@@ -719,15 +719,36 @@ p + ul, p + ol {
 }
 
 .left-col {
-    float: left;
-    margin-right: 1em;
-    width: 100px;
-    min-height: 100%;
+    /*float: left;*/
+    /*margin-right: 1em;*/
 
-    border-radius: 0.2em;
-    box-shadow: 2px 0 8px rgba(0,0,0,25%);
+    position:  relative;
+
+    /*border-radius: 0.2em;*/
+    /*box-shadow:  2px 0 8px rgba(0,0,0,25%);*/
 }
 
+.left-col img{
+    position:  absolute;
+    top: -70px;
+    left: -20px;
+
+    width: 280px;
+    /*height: 100%;*/
+
+    transform: scale(1);
+    transition: transform 100ms ease-out 50ms
+}
+
+
+.left-col img:hover{
+    transform: scale(1.05);
+    transition: transform 100ms ease-out 50ms
+}
+
+.right-col{
+    margin: 0 0 0 280px;
+}
 
 /* FEEDBACK */
 
