@@ -19,9 +19,9 @@
     --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
 
     /* Theme */
-    --theme-hue       : 204;
-    --theme-saturation: 90%;
-    --theme-lightness : 45%;
+    --theme-hue       : 30;
+    --theme-saturation: 26%;
+    --theme-lightness : 85%;
     --theme-color     : hsl(var(--theme-hue), var(--theme-saturation), var(--theme-lightness));
 
     /* Typography
@@ -50,9 +50,9 @@
     /* Utility
     ------------------------------------------------------------------------- */
     /* Borders */
-    --border-radius-s : ;
-    --border-radius-m : ;
-    --border-radius-l : ;
+    --border-radius-s : 0.2em;
+    --border-radius-m : 0.4em;
+    --border-radius-l : 1em;
 
     /* Animations and transitions */
     --duration-slow   : 1s;
@@ -114,19 +114,19 @@
     --content-max-width                 : 45em;
 
     /* Blockquote */
-    --blockquote-background             : var(--mono-tint3);
+    --blockquote-background             : hsla(30, 26%, 85%, 0.35);
     --blockquote-border-color           : ;
-    --blockquote-border-style           : solid;
+    --blockquote-border-style           : none;
     --blockquote-border-width           : ;
-    --blockquote-border-radius          : var(--border-radius-m);
-    --blockquote-color                  : ;
+    --blockquote-border-radius          : 0.5em;
+    --blockquote-color                  : #61322D;
     --blockquote-em-font-family         : ;
     --blockquote-em-font-size           : ;
     --blockquote-em-font-style          : ;
     --blockquote-em-font-weight         : normal;
     --blockquote-font-family            : ;
     --blockquote-font-size              : ;
-    --blockquote-font-style             : ;
+    --blockquote-font-style             : italic;
     --blockquote-font-weight            : normal;
     --blockquote-quotes-close           : ;
     --blockquote-quotes-color           : ;
@@ -303,14 +303,14 @@
     --notice-tip-before-content         : ;
 
     /* Tables */
-    --table-border                      : 0.0em;
-    --table-color                       : var(--mono-shade4);
+    --table-border                      : 0.04em;
+    --table-color                       : var(--mono-tint1);
 
     --table-body-border-color           : var(--table-color);
     --table-body-border-width           : var(--table-border);
     --table-cell-border-color           : var(--table-color);
     --table-cell-border-width           : var(--table-border);
-    --table-cell-padding                : 0.5em 0.25em;
+    --table-cell-padding                : 0.25em 0.5em;
     --table-head-background             : ;
     --table-head-border-color           : var(--table-color);
     --table-head-border-width           : var(--table-border);
@@ -547,6 +547,10 @@
 
 }
 
+p img {
+    border-radius: var(--border-radius-m);
+}
+
 .markdown-section figure, .markdown-section p {
     margin: 0.2em 0 1em 0;
 }
@@ -698,11 +702,10 @@ p + ul, p + ol {
     margin-top: 0.2rem;
 }
 
-
-
 .bg-light {
-    /*background-image: url("/assets/img/endpaper-pattern-filled@4x.png");*/
+    /*background-image: url("/assets/img/endpaper-pattern-filled.png");*/
     /*background-size: 25%;*/
+    
     background-color: hsla(30, 26%, 85%, 0.35);
     width: 100%;
     padding: 1em 1.2em 1.1em;
@@ -731,7 +734,7 @@ p + ul, p + ol {
 .left-col img{
     position:  absolute;
     top: -70px;
-    left: -20px;
+    left: -55px;
 
     width: 280px;
     /*height: 100%;*/
@@ -747,7 +750,7 @@ p + ul, p + ol {
 }
 
 .right-col{
-    margin: 0 0 0 280px;
+    margin: 0 0 0 220px;
 }
 
 /* FEEDBACK */
