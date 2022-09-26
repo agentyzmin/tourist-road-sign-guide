@@ -238,13 +238,16 @@
 
 Інструмент для транслітерації — [translit.a3.kyiv.ua](http://translit.a3.kyiv.ua)
 
-<span class="p-number">6.3.2</span> Шрифт. Для всіх написів використовують шрифт Road UA, накреслення Medium (середній).
+<span class="p-number">6.3.2</span> Шрифт. Для всіх написів використовують [шрифт Road UA](https://agentyzmin.github.io/Road-UA-Font/), накреслення Medium (середній).
+
+<div style="font-size: 2.4em; font-weight: 500; color:#fff; background-color:#61322D; padding: 0.2em 0.6em; border-radius: 0.1em; margin: 0 0 0.2em 0;">
+Аа Бб Вв Гг Ґґ Дд Ее Єє Жж Зз Ии Іі Її Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ьь Юю Яя
+Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+1234567890
+</div>
 
 <p class="caption">Ілюстрація 6.4 — Літери шрифту Road UA в накресленні Medium</p>
 
-Road UA Medium
-Аа Бб Вв Гг Ґґ Дд Ее Єє Жж Зз Ии Іі Її Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ьь Юю Яя 1234567890
-Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
 
 <span class="p-number">6.3.3</span> Написання. Для українських написів використовують великі літери на початку повідомлення та власних назв, інші літери — рядкові. Для написів латинкою використовують написання Title Case — іменники, прикметники, займенники пишуть з великої літери, службові слова (прийменники, артиклі тощо) — з рядкової, наприклад Ruins of the Klevan Castle.
 

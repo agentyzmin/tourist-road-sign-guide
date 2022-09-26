@@ -37,3 +37,8 @@
   * [ І. Піктограми категорій](                     )
   * [ ІІ. Додаткові піктограми](                    )
   * [ ІІІ. Піктограми сервісів](                    )
+
+<!-- 
+<a href="#" style="padding: 0.4em 0.6em; border: 1px solid var(--mono-tint2);">Завантажити PDF</a>
+ -->
+<!-- <button onclick="" type="button">Завантажити PDF</button> -->
