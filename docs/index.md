@@ -17,7 +17,7 @@
   <div class="right-col">
     <p>Путівник можна завантажити у&nbsp;вигляді PDF.</p>
     <a href="/PDF/TouristRoadSigns-Guide-v.1.0.pdf" target="_blank" style="font-weight: 700;">
-      <img height="24" src="assets/img/filetype-pdf.svg" style="margin-bottom: -0.2em; margin-right: 0.2em;">Завантажити
+      <img height="22" src="assets/img/filetype-pdf.svg" style="margin-bottom: -0.2em; margin-right: 0.3em;">Завантажити
     </a>
     <p class="caption" style="margin-top: 0.2em;">PDF, 24 МБ</p>
   </div>

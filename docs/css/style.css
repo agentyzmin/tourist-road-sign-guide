@@ -19,10 +19,11 @@
     --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
 
     /* Theme */
-    --theme-hue       : 30;
-    --theme-saturation: 26%;
-    --theme-lightness : 85%;
+    --theme-hue       : 6;
+    --theme-saturation: 37%;
+    --theme-lightness : 28%;
     --theme-color     : hsl(var(--theme-hue), var(--theme-saturation), var(--theme-lightness));
+
 
     /* Typography
     ------------------------------------------------------------------------- */
@@ -734,7 +735,7 @@ p + ul, p + ol {
 .left-col img{
     position:  absolute;
     top: -70px;
-    left: -55px;
+    left: -45px;
 
     width: 280px;
     /*height: 100%;*/
@@ -752,6 +753,17 @@ p + ul, p + ol {
 .right-col{
     margin: 0 0 0 220px;
 }
+
+.example-brown{
+    font-size: 2.4em; 
+    font-weight: 500; 
+    color:#fff; 
+    background-color: var(--theme-color); 
+    padding: 0.2em 0.6em; 
+    border-radius: 0.1em; 
+    margin: 0 0 0.2em 0;"
+}
+
 
 /* FEEDBACK */
 
