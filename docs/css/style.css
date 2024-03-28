@@ -73,7 +73,7 @@
 ============================================================================= */
     --base-background-color: #fff;
     --base-color           : black;
-    --base-font-family     : "RoadUA", sans-serif;
+    --base-font-family     : "Road UI", "RoadUA", sans-serif;
     --base-font-size       : 1.2em;
     --base-font-weight     : normal;
     --base-letter-spacing  : ;
@@ -741,13 +741,17 @@ p + ul, p + ol {
     /*height: 100%;*/
 
     transform: scale(1);
-    transition: transform 100ms ease-out 50ms
+    transition: transform 100ms ease-out 50ms;
+
+    
 }
 
 
 .left-col img:hover{
     transform: scale(1.05);
-    transition: transform 100ms ease-out 50ms
+    transition: transform 100ms ease-out 50ms;
+
+    
 }
 
 .right-col{
