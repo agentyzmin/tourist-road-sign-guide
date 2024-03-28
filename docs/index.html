@@ -124,22 +124,22 @@
 <script>
   window.$docsify = {
     homepage: 'index.md',
-    // loadSidebar: '_sidebar.md',
+    loadSidebar: '_sidebar.md',
     autoHeader: true,
-    search: 'auto',
-    // search: {
-    //   paths: 'auto',
-    //   placeholder: 'Пошук',
-    //   depth: 2,
-    //   noData: 'Нічого не знайшли',
-    // },
+    // search: 'auto',
+    search: {
+      paths: 'auto',
+      placeholder: 'Пошук',
+      depth: 2,
+      noData: 'Нічого не знайшли',
+    },
     // basePath: 'touristroadguide.a3.kyiv.ua/guide',
     // name: 'Путівник',
     // logo: '/_media/icon.svg',
     // themeColor: '#3F51B5',
     // hideSidebar: true,
     // loadNavbar: true,
-    // sidebarDisplayLevel: 1,
+    sidebarDisplayLevel: 1,
     notFoundPage: '404.md',
     themeable: {
         readyTransition : true, // default
