@@ -38,38 +38,5 @@
   * [ ІІ. Додаткові піктограми](                  appendix-a-icons.md?id=_ІІ-Додаткові-піктограми)
   * [ ІІІ. Піктограми сервісів](                  appendix-a-icons.md?id=_ІІІ-Піктограми-сервісів)
 
-<!-- 
-<a href="#" style="padding: 0.4em 0.6em; border: 1px solid var(--mono-tint2);">Завантажити PDF</a>
- -->
-<!-- <button onclick="" type="button">Завантажити PDF</button> -->
-<!-- 
-http://localhost:3000/#/4-sign-types?id=_44-Підтверджувальні-знаки-тип-С
-
-?id=_2.1-Точка-інтересу
-?id=_2.2-Туристичний-маршрут
-?id=_2.3-Туристичний-населений-пункт
-?id=_2.4-Сервіси
-?id=_3.1-Типи-користувачів
-?id=_3.2-Користувацький-сценарій
-4-sign-types.md?id=_4.1-Набір-типових-знаків
-4-sign-types.md?id=_4.2-Попередні-знаки-(тип-А)
-4-sign-types.md?id=_4.3-Напрямні-знаки-(тип-B)
-4-sign-types.md?id=_4.4-Підтверджувальні-знаки-(тип-С)
-5-placement.md?id=_5.1-Загальні-рекомендації-з-розміщення
-5-placement.md?id=_5.2-Попередні-знаки-(тип-A)
-5-placement.md?id=_5.3-Напрямні-знаки-(тип-B)
-5-placement.md?id=_5.4-Підтверджувальні-знаки-(тип-C)-Підтверджувальний-знак-окремої-точки-інтересу
-6-elements.md?id=_61-Загальні-принципи-дизайну-знаків
-6-elements.md?id=_62-Кольори
-6-elements.md?id=_63-Текст
-6-elements.md?id=_64-Стрілки
-6-elements.md?id=_65-Піктограми
-6-elements.md?id=_66-Номери-доріг
-6-elements.md?id=_67-Позначення-маршруту
-6-elements.md?id=_68-Облямівка-та-заокруглення-кутів-знака
-7-construction.md?id=_71-Попередні-знаки-тип-A
-7-construction.md?id=_72-Напрямні-знаки-тип-B
-7-construction.md?id=_73-Підтверджувальні-знаки-тип-C
-appendix-a-icons.md?id=_І-Піктограми-категорій
-appendix-a-icons.md?id=_ІІ-Додаткові-піктограми
-appendix-a-icons.md?id=_ІІІ-Піктограми-сервісів -->
+<!-- <a href="#" style="padding: 0.4em 0.6em; border: 1px solid var(--mono-tint2);">Завантажити PDF</a> -->
+<button onclick="location.href='/PDF/TouristRoadSigns-Guide-v.1.0.pdf';" type="button" style="margin-top: 0.5em;">Завантажити PDF</button>

@@ -580,10 +580,20 @@ button {
     background-color: var(--base-color);                
 
     border: none;
-    border-radius: 0.1em;
+    border-radius: 0.25em;
 
-    padding: 0.5em 1em 0.5em;
+    padding: 0.5em 1em 0.6em;
+    
 }
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 90%;
+}
+
 
 
 /* sidebar */
