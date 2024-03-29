@@ -583,7 +583,7 @@ button {
     border-radius: 0.25em;
 
     padding: 0.5em 1em 0.6em;
-    
+    cursor: pointer;
 }
 
 button:hover {
