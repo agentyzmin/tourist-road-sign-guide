@@ -785,7 +785,7 @@ p + ul, p + ol {
     margin: 1em 0 0 0;
 }
 
-.close {
+.feedback-popup-close {
     position: absolute;
     top: 1em;
     right: 1em;
