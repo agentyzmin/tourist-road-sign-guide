@@ -32,6 +32,11 @@
     });
   }
 
+  /* Content images load lazily (the construction drawings are large). */
+  function lazyImages(root) {
+    root.querySelectorAll('img:not([loading])').forEach(function (img) { img.setAttribute('loading', 'lazy'); });
+  }
+
   /* External links open in a new tab. */
   function externalLinks(root) {
     root.querySelectorAll('a[href^="http"]').forEach(function (a) {
@@ -51,6 +56,7 @@
     hook.doneEach(function () {
       var root = document.querySelector('.markdown-section') || document;
       paragraphAnchors(root);
+      lazyImages(root);
       externalLinks(root);
       modules.forEach(function (mod) {
         try { mod.init(root); } catch (e) { console.error('[guide] module failed', mod.name, e); }

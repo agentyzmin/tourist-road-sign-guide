@@ -154,7 +154,9 @@
 <p class="caption">* Другий варіант вживається на початку слова.</p>
 <p class="caption">** Після літери «з» вживається «gh». В інших випадках — «h».</p>
 
-Інструмент для транслітерації — [translit.a3.kyiv.ua](http://translit.a3.kyiv.ua)
+<div class="widget translit" data-widget="translit"></div>
+
+Окремий інструмент для транслітерації: [translit.a3.kyiv.ua](http://translit.a3.kyiv.ua).
 
 <span class="p-number">6.3.2</span> Шрифт. Для всіх написів використовують [шрифт Road UA](https://agentyzmin.github.io/Road-UA-Font/), накреслення Medium (середній).
 

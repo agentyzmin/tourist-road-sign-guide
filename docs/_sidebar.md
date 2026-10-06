@@ -39,6 +39,6 @@
   * [ІІІ. Піктограми сервісів](/appendix-a-icons?id=services)
 
 <div class="sidebar-footer">
-  <a class="button" href="PDF/TouristRoadSigns-Guide-v.1.0.pdf" target="_blank" rel="noopener">Завантажити PDF</a>
-  <a class="button button-secondary" href="https://touristroadsign.a3.kyiv.ua/" target="_blank" rel="noopener">Генератор знаків</a>
+  <a class="button" href="PDF/TouristRoadSigns-Guide-v.1.0.pdf" target="_blank" rel="noopener" data-nosearch>Завантажити PDF</a>
+  <a class="button button-secondary" href="https://touristroadsign.a3.kyiv.ua/" target="_blank" rel="noopener" data-nosearch>Генератор знаків</a>
 </div>
