@@ -979,8 +979,12 @@ input[type="file"] {
     align-items: start;
 }
 .category-icon, .service-icon {
-    width: 4em;
-    height: 4em;
+    --icon-size: 4em;
+    box-sizing: border-box;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    padding: calc(var(--icon-size) * 0.15); /* 15% of the icon size, not of the container */
+    object-fit: contain;
     border-radius: 0.35em;
     background-color: #592d2c; /* icon files have no background */
 }
