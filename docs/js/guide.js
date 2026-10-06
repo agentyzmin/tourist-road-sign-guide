@@ -55,6 +55,8 @@
   function plugin(hook) {
     hook.doneEach(function () {
       var root = document.querySelector('.markdown-section') || document;
+      var page = (location.hash.replace(/^#\/?/, '').split('?')[0] || 'index').replace(/\/$/, '');
+      document.body.setAttribute('data-page', page);
       paragraphAnchors(root);
       lazyImages(root);
       externalLinks(root);

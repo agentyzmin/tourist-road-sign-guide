@@ -20,6 +20,7 @@
 | `docs/data/icons.json` | Каталог піктограм (назви, групи, файли) |
 | `docs/css/style.css` | Стилі поверх теми docsify-themeable |
 | `docs/js/guide.js` | Ядро: реєстрація модулів, якорі на нумерованих абзацах, lazy-loading |
+| `docs/icons.md`, `docs/js/icon-library.js` | Сторінка «Бібліотека піктограм» (`#/icons`): сітка всіх піктограм з `icons.json`, пошук, фільтр за розділом, картка з завантаженням; посилання на піктограму `#/icons?icon=<slug>` |
 | `docs/js/icons.js` | Пошук і «Копіювати SVG» у бібліотеці піктограм |
 | `docs/js/widgets.js` | Калькулятор значущості (2.1), матриця типів знаків (4.1), транслітератор (6.3), форма зворотного зв'язку |
 | `scripts/build-icons.py` | Збирає `docs/icons/`, `icons.json` і блок галереї з папки Production/Icons на Google Drive |

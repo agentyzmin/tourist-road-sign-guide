@@ -77,6 +77,7 @@
   * [І. Піктограми категорій](/appendix-a-icons?id=categories)
   * [ІІ. Додаткові піктограми](/appendix-a-icons?id=additional)
   * [ІІІ. Піктограми сервісів](/appendix-a-icons?id=services)
+* [Бібліотека піктограм](/icons)
 
 ## Для кого цей путівник
 

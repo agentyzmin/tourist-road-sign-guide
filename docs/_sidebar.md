@@ -37,6 +37,7 @@
   * [І. Піктограми категорій](/appendix-a-icons?id=categories)
   * [ІІ. Додаткові піктограми](/appendix-a-icons?id=additional)
   * [ІІІ. Піктограми сервісів](/appendix-a-icons?id=services)
+* [Бібліотека піктограм](/icons)
 
 <div class="sidebar-footer">
   <a class="button" href="PDF/TouristRoadSigns-Guide-v.1.0.pdf" target="_blank" rel="noopener" data-nosearch>Завантажити PDF</a>
