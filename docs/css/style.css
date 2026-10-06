@@ -898,7 +898,24 @@ input[type="file"] {
     flex-direction: column;
     gap: 0.5em;
     margin: 1.5em 0 2em;
+}
+.sidebar .sidebar-footer a.button {
+    display: block;
+    text-align: center;
     font-size: 0.8em;
+    padding: 0.6em 1em 0.7em;
+    color: var(--base-background-color);
+    background-color: var(--base-color);
+    background-image: none;
+    border: none;
+    border-radius: 0.25em;
+    text-decoration: none;
+    font-weight: 700;
+}
+.sidebar .sidebar-footer a.button.button-secondary {
+    color: var(--base-color);
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px var(--mono-tint1);
 }
 
 /* Paragraph permalinks */
@@ -921,3 +938,197 @@ input[type="file"] {
     .p-number { display: inline-block; margin-right: 0.5em; font-size: 0.8em; }
     .p-number.is-copied a.p-anchor::after { position: static; margin-left: 0.3em; }
 }
+
+/* Sign-type matrix (table 4.1) */
+.sign-matrix {
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+.sign-matrix strong {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.sign-matrix td[data-sign] {
+    cursor: pointer;
+    transition: background-color 120ms;
+}
+.sign-matrix td[data-sign]:hover,
+.sign-matrix td[data-sign].is-active {
+    background-color: hsla(30, 26%, 85%, 0.35);
+}
+.sign-matrix td[data-sign] p { margin: 0.2em 0 0; }
+.sign-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.2em;
+    font-size: 0.85em;
+    margin: 0.3em 0 0;
+}
+
+/* Category list (2.1.2) and service list (2.4.4) */
+.category-list, .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    gap: 1.5em 2em;
+    margin: 1.5em 0 2em;
+}
+.category-item, .service-item {
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    gap: 0 1em;
+    align-items: start;
+}
+.category-icon, .service-icon {
+    width: 4em;
+    height: 4em;
+    border-radius: 0.35em;
+}
+.category-item strong, .service-item strong {
+    display: block;
+    line-height: 1.25;
+    margin: 0 0 0.3em;
+}
+.category-item p, .service-item p {
+    margin: 0 0 0.3em;
+    font-size: 0.9em;
+}
+.category-item ul {
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 0.9em;
+}
+.category-item li { margin: 0; }
+
+/* Icon library (Appendix A) */
+.icon-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin: 1.5em 0 2em;
+    padding: 1em 1.2em 1.1em;
+    background-color: hsla(30, 26%, 85%, 0.35);
+    border-radius: 0.7em;
+}
+.icon-search {
+    width: 100%;
+    font: inherit;
+    padding: 0.5em 0.8em;
+    border: 1px solid var(--mono-tint1);
+    border-radius: 0.35em;
+    background: #fff;
+}
+.icon-toolbar__downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: 0.8em;
+}
+.icon-toolbar__downloads .button-secondary { background-color: #fff; }
+.icon-empty { color: var(--mono-shade1); }
+
+.icon-group { margin: 0 0 2.5em; }
+.icon-group__title {
+    font-size: var(--font-size-m);
+    font-weight: 800;
+    margin: 0 0 0.75em;
+}
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.icon-card {
+    width: 10.5em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--mono-tint2);
+    border-radius: 0.6em;
+    overflow: hidden;
+    background: #fff;
+}
+.icon-card[hidden] { display: none; }
+.icon-card__preview {
+    background:
+        linear-gradient(to right, var(--mono-tint2) 1px, transparent 1px) 0 0 / 10% 10%,
+        linear-gradient(to bottom, var(--mono-tint2) 1px, transparent 1px) 0 0 / 10% 10%,
+        var(--mono-tint3);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+.icon-card--badge { width: 16em; }
+.icon-card--badge .icon-card__preview { aspect-ratio: 2.5 / 1; }
+.icon-card__preview img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0.35em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.icon-card--badge .icon-card__preview img { width: 100%; }
+.icon-card__body {
+    padding: 0.8em 0.9em 0.9em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.icon-card__kind {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--mono-shade1);
+    margin: 0 0 0.3em;
+}
+.icon-card__name {
+    font-size: 0.95em;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.2em !important;
+}
+.icon-card__en, .icon-card__also {
+    font-size: 0.8em;
+    color: var(--mono-shade1);
+    margin: 0 0 0.2em;
+}
+.icon-card__actions {
+    margin-top: auto;
+    padding-top: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    font-size: 0.75em;
+}
+.icon-dl, .icon-copy {
+    display: inline-block;
+    font: inherit;
+    font-weight: 700;
+    padding: 0.25em 0.55em;
+    border-radius: 0.3em;
+    border: 1px solid var(--mono-tint1);
+    background: #fff;
+    color: var(--base-color) !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    line-height: 1.3;
+}
+.icon-dl:hover, .icon-copy:hover { border-color: var(--base-color); }
+.icon-copy.is-done { background: var(--base-color); color: #fff !important; border-color: var(--base-color); }
+
+/* Tables: keep "Погано / Добре" and data tables readable */
+.markdown-section table { display: table; width: 100%; }
+
+/* Print */
+@media print {
+    .sidebar, .sidebar-toggle, .app-nav, .docsify-pagination-container, .icon-toolbar, .icon-card__actions { display: none !important; }
+    .content { left: 0 !important; }
+    .markdown-section { max-width: 100%; }
+    .p-number { position: static; margin-right: 0.5em; }
+    a { text-decoration: none; color: inherit; }
+}
+
+/* Spacing fixes for generated blocks */
+.category-item p + ul, .service-item p + ul { margin-top: 0 !important; }
+.markdown-section h4 { margin-top: 2em; }
+.markdown-section h4 + p { margin-top: 0.5em; }

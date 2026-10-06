@@ -1,0 +1,1787 @@
+{
+ "version": "1.0",
+ "formats": [
+  "svg",
+  "png",
+  "eps",
+  "pdf",
+  "svg-transparent"
+ ],
+ "zips": {
+  "svg": "icons/zip/TouristRoadSigns-Icons-svg.zip",
+  "png": "icons/zip/TouristRoadSigns-Icons-png.zip",
+  "eps": "icons/zip/TouristRoadSigns-Icons-eps.zip",
+  "pdf": "icons/zip/TouristRoadSigns-Icons-pdf.zip",
+  "svg-transparent": "icons/zip/TouristRoadSigns-Icons-svg-transparent.zip",
+  "all": "icons/zip/TouristRoadSigns-Icons-all.zip"
+ },
+ "fullSet": {
+  "dwg": "icons/all/TouristRoadSigns-Icons.dwg",
+  "ai": "icons/all/TouristRoadSigns-Icons.ai",
+  "pdf": "icons/all/TouristRoadSigns-Icons.pdf"
+ },
+ "sections": [
+  {
+   "id": "categories",
+   "title": "І. Піктограми категорій",
+   "groups": [
+    {
+     "title": "Ремеслене та локальне виробництво",
+     "icons": [
+      {
+       "slug": "manufacture",
+       "name": "Ремеслене та локальне виробництво",
+       "en": "Craft and local production",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/manufacture.svg",
+         "size": 785
+        },
+        "png": {
+         "path": "icons/png/manufacture.png",
+         "size": 21963
+        },
+        "eps": {
+         "path": "icons/eps/manufacture.eps",
+         "size": 394698
+        },
+        "pdf": {
+         "path": "icons/pdf/manufacture.pdf",
+         "size": 27395
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/manufacture.svg",
+         "size": 696
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Торгівля",
+     "icons": [
+      {
+       "slug": "trading",
+       "name": "Торгівля",
+       "en": "Trade",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/trading.svg",
+         "size": 2416
+        },
+        "png": {
+         "path": "icons/png/trading.png",
+         "size": 24048
+        },
+        "eps": {
+         "path": "icons/eps/trading.eps",
+         "size": 397990
+        },
+        "pdf": {
+         "path": "icons/pdf/trading.pdf",
+         "size": 27748
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/trading.svg",
+         "size": 2327
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Меморіальні кладовища",
+     "icons": [
+      {
+       "slug": "cemetery",
+       "name": "Меморіальні кладовища",
+       "en": "Memorial cemeteries",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/cemetery.svg",
+         "size": 812
+        },
+        "png": {
+         "path": "icons/png/cemetery.png",
+         "size": 15245
+        },
+        "eps": {
+         "path": "icons/eps/cemetery.eps",
+         "size": 394586
+        },
+        "pdf": {
+         "path": "icons/pdf/cemetery.pdf",
+         "size": 27228
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/cemetery.svg",
+         "size": 723
+        }
+       }
+      },
+      {
+       "slug": "cemetery-military",
+       "name": "Військові кладовища",
+       "en": "Military cemeteries",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/cemetery-military.svg",
+         "size": 1283
+        },
+        "png": {
+         "path": "icons/png/cemetery-military.png",
+         "size": 23209
+        },
+        "eps": {
+         "path": "icons/eps/cemetery-military.eps",
+         "size": 395318
+        },
+        "pdf": {
+         "path": "icons/pdf/cemetery-military.pdf",
+         "size": 27388
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/cemetery-military.svg",
+         "size": 1194
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Місця пам’яті",
+     "icons": [
+      {
+       "slug": "memorial",
+       "name": "Місця пам’яті",
+       "en": "Places of memory",
+       "kind": "general",
+       "also": [
+        "Пам’ятники і меморіали"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/memorial.svg",
+         "size": 689
+        },
+        "png": {
+         "path": "icons/png/memorial.png",
+         "size": 16103
+        },
+        "eps": {
+         "path": "icons/eps/memorial.eps",
+         "size": 394074
+        },
+        "pdf": {
+         "path": "icons/pdf/memorial.pdf",
+         "size": 27253
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/memorial.svg",
+         "size": 600
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Археологічні пам’ятки",
+     "icons": [
+      {
+       "slug": "archeology",
+       "name": "Археологічні пам’ятки",
+       "en": "Archaeological sites",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/archeology.svg",
+         "size": 5940
+        },
+        "png": {
+         "path": "icons/png/archeology.png",
+         "size": 35377
+        },
+        "eps": {
+         "path": "icons/eps/archeology.eps",
+         "size": 409818
+        },
+        "pdf": {
+         "path": "icons/pdf/archeology.pdf",
+         "size": 32064
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/archeology.svg",
+         "size": 5851
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Рекреація на воді",
+     "icons": [
+      {
+       "slug": "recreation-water",
+       "name": "Рекреація на воді",
+       "en": "Water recreation",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/recreation-water.svg",
+         "size": 2124
+        },
+        "png": {
+         "path": "icons/png/recreation-water.png",
+         "size": 31856
+        },
+        "eps": {
+         "path": "icons/eps/recreation-water.eps",
+         "size": 398738
+        },
+        "pdf": {
+         "path": "icons/pdf/recreation-water.pdf",
+         "size": 28339
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/recreation-water.svg",
+         "size": 2035
+        }
+       }
+      },
+      {
+       "slug": "recreation-water-beach",
+       "name": "Пляжі та облаштовані місця для купання",
+       "en": "Beaches and bathing areas",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/recreation-water-beach.svg",
+         "size": 2124
+        },
+        "png": {
+         "path": "icons/png/recreation-water-beach.png",
+         "size": 31856
+        },
+        "eps": {
+         "path": "icons/eps/recreation-water-beach.eps",
+         "size": 398766
+        },
+        "pdf": {
+         "path": "icons/pdf/recreation-water-beach.pdf",
+         "size": 28344
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/recreation-water-beach.svg",
+         "size": 2035
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Рекреація на снігу",
+     "icons": [
+      {
+       "slug": "recreation-snow",
+       "name": "Рекреація на снігу",
+       "en": "Snow recreation",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/recreation-snow.svg",
+         "size": 1060
+        },
+        "png": {
+         "path": "icons/png/recreation-snow.png",
+         "size": 18919
+        },
+        "eps": {
+         "path": "icons/eps/recreation-snow.eps",
+         "size": 395530
+        },
+        "pdf": {
+         "path": "icons/pdf/recreation-snow.pdf",
+         "size": 27588
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/recreation-snow.svg",
+         "size": 971
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Рекреація на землі",
+     "icons": [
+      {
+       "slug": "recreation-ground",
+       "name": "Рекреація на землі",
+       "en": "Land recreation",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/recreation-ground.svg",
+         "size": 1130
+        },
+        "png": {
+         "path": "icons/png/recreation-ground.png",
+         "size": 24813
+        },
+        "eps": {
+         "path": "icons/eps/recreation-ground.eps",
+         "size": 395626
+        },
+        "pdf": {
+         "path": "icons/pdf/recreation-ground.pdf",
+         "size": 27653
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/recreation-ground.svg",
+         "size": 1041
+        }
+       }
+      },
+      {
+       "slug": "recreation-ground-hiking",
+       "name": "Пішохідні маршрути",
+       "en": "Hiking trails",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/recreation-ground-hiking.svg",
+         "size": 1130
+        },
+        "png": {
+         "path": "icons/png/recreation-ground-hiking.png",
+         "size": 24813
+        },
+        "eps": {
+         "path": "icons/eps/recreation-ground-hiking.eps",
+         "size": 395654
+        },
+        "pdf": {
+         "path": "icons/pdf/recreation-ground-hiking.pdf",
+         "size": 27667
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/recreation-ground-hiking.svg",
+         "size": 1041
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Культурні заклади",
+     "icons": [
+      {
+       "slug": "cultural",
+       "name": "Культурні заклади",
+       "en": "Cultural institutions",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/cultural.svg",
+         "size": 857
+        },
+        "png": {
+         "path": "icons/png/cultural.png",
+         "size": 14688
+        },
+        "eps": {
+         "path": "icons/eps/cultural.eps",
+         "size": 394822
+        },
+        "pdf": {
+         "path": "icons/pdf/cultural.pdf",
+         "size": 27286
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/cultural.svg",
+         "size": 768
+        }
+       }
+      },
+      {
+       "slug": "cultural-museum",
+       "name": "Музей",
+       "en": "Museum",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/cultural-museum.svg",
+         "size": 857
+        },
+        "png": {
+         "path": "icons/png/cultural-museum.png",
+         "size": 14688
+        },
+        "eps": {
+         "path": "icons/eps/cultural-museum.eps",
+         "size": 394846
+        },
+        "pdf": {
+         "path": "icons/pdf/cultural-museum.pdf",
+         "size": 27299
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/cultural-museum.svg",
+         "size": 768
+        }
+       }
+      },
+      {
+       "slug": "cultural-cinema",
+       "name": "Кінотеатр",
+       "en": "Cinema",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/cultural-cinema.svg",
+         "size": 1091
+        },
+        "png": {
+         "path": "icons/png/cultural-cinema.png",
+         "size": 19740
+        },
+        "eps": {
+         "path": "icons/eps/cultural-cinema.eps",
+         "size": 395718
+        },
+        "pdf": {
+         "path": "icons/pdf/cultural-cinema.pdf",
+         "size": 27552
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/cultural-cinema.svg",
+         "size": 1002
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Православні релігійні споруди",
+     "icons": [
+      {
+       "slug": "church-orthodox",
+       "name": "Православні релігійні споруди",
+       "en": "Orthodox religious buildings",
+       "kind": "general",
+       "also": [
+        "Православні храми"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-orthodox.svg",
+         "size": 2285
+        },
+        "png": {
+         "path": "icons/png/church-orthodox.png",
+         "size": 24660
+        },
+        "eps": {
+         "path": "icons/eps/church-orthodox.eps",
+         "size": 398970
+        },
+        "pdf": {
+         "path": "icons/pdf/church-orthodox.pdf",
+         "size": 27959
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-orthodox.svg",
+         "size": 2196
+        }
+       }
+      },
+      {
+       "slug": "church-orthodox-monastery",
+       "name": "Православні монастирі",
+       "en": "Orthodox monasteries",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-orthodox-monastery.svg",
+         "size": 1396
+        },
+        "png": {
+         "path": "icons/png/church-orthodox-monastery.png",
+         "size": 18625
+        },
+        "eps": {
+         "path": "icons/eps/church-orthodox-monastery.eps",
+         "size": 396870
+        },
+        "pdf": {
+         "path": "icons/pdf/church-orthodox-monastery.pdf",
+         "size": 27775
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-orthodox-monastery.svg",
+         "size": 1307
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Католицькі і протестантські релігійні споруди",
+     "icons": [
+      {
+       "slug": "church-catholic",
+       "name": "Католицькі і протестантські релігійні споруди",
+       "en": "Catholic and Protestant religious buildings",
+       "kind": "general",
+       "also": [
+        "Костели, римо-католицькі храми"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-catholic.svg",
+         "size": 994
+        },
+        "png": {
+         "path": "icons/png/church-catholic.png",
+         "size": 20278
+        },
+        "eps": {
+         "path": "icons/eps/church-catholic.eps",
+         "size": 395610
+        },
+        "pdf": {
+         "path": "icons/pdf/church-catholic.pdf",
+         "size": 27484
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-catholic.svg",
+         "size": 905
+        }
+       }
+      },
+      {
+       "slug": "church-catholic-monastery",
+       "name": "Римо-католицькі монастирі",
+       "en": "Roman Catholic monasteries",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-catholic-monastery.svg",
+         "size": 979
+        },
+        "png": {
+         "path": "icons/png/church-catholic-monastery.png",
+         "size": 16065
+        },
+        "eps": {
+         "path": "icons/eps/church-catholic-monastery.eps",
+         "size": 395634
+        },
+        "pdf": {
+         "path": "icons/pdf/church-catholic-monastery.pdf",
+         "size": 27527
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-catholic-monastery.svg",
+         "size": 890
+        }
+       }
+      },
+      {
+       "slug": "church-catholic-greek-church",
+       "name": "Греко-католицькі храми",
+       "en": "Greek Catholic churches",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-catholic-greek-church.svg",
+         "size": 1565
+        },
+        "png": {
+         "path": "icons/png/church-catholic-greek-church.png",
+         "size": 19732
+        },
+        "eps": {
+         "path": "icons/eps/church-catholic-greek-church.eps",
+         "size": 396846
+        },
+        "pdf": {
+         "path": "icons/pdf/church-catholic-greek-church.pdf",
+         "size": 27651
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-catholic-greek-church.svg",
+         "size": 1476
+        }
+       }
+      },
+      {
+       "slug": "church-catholic-greek-monastery",
+       "name": "Греко-католицькі монастирі",
+       "en": "Greek Catholic monasteries",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/church-catholic-greek-monastery.svg",
+         "size": 1603
+        },
+        "png": {
+         "path": "icons/png/church-catholic-greek-monastery.png",
+         "size": 21211
+        },
+        "eps": {
+         "path": "icons/eps/church-catholic-greek-monastery.eps",
+         "size": 396878
+        },
+        "pdf": {
+         "path": "icons/pdf/church-catholic-greek-monastery.pdf",
+         "size": 27772
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/church-catholic-greek-monastery.svg",
+         "size": 1514
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Юдейські релігійні споруди",
+     "icons": [
+      {
+       "slug": "synagogue",
+       "name": "Юдейські релігійні споруди",
+       "en": "Jewish religious buildings",
+       "kind": "general",
+       "also": [
+        "Синагоги"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/synagogue.svg",
+         "size": 2008
+        },
+        "png": {
+         "path": "icons/png/synagogue.png",
+         "size": 20987
+        },
+        "eps": {
+         "path": "icons/eps/synagogue.eps",
+         "size": 396802
+        },
+        "pdf": {
+         "path": "icons/pdf/synagogue.pdf",
+         "size": 28075
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/synagogue.svg",
+         "size": 1919
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Ісламські релігійні споруди",
+     "icons": [
+      {
+       "slug": "mosque",
+       "name": "Ісламські релігійні споруди",
+       "en": "Islamic religious buildings",
+       "kind": "general",
+       "also": [
+        "Мечеть"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/mosque.svg",
+         "size": 1488
+        },
+        "png": {
+         "path": "icons/png/mosque.png",
+         "size": 20701
+        },
+        "eps": {
+         "path": "icons/eps/mosque.eps",
+         "size": 396566
+        },
+        "pdf": {
+         "path": "icons/pdf/mosque.pdf",
+         "size": 27735
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/mosque.svg",
+         "size": 1399
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Промислові споруди",
+     "icons": [
+      {
+       "slug": "factory",
+       "name": "Промислові споруди",
+       "en": "Industrial buildings",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/factory.svg",
+         "size": 658
+        },
+        "png": {
+         "path": "icons/png/factory.png",
+         "size": 13930
+        },
+        "eps": {
+         "path": "icons/eps/factory.eps",
+         "size": 394366
+        },
+        "pdf": {
+         "path": "icons/pdf/factory.pdf",
+         "size": 27256
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/factory.svg",
+         "size": 569
+        }
+       }
+      },
+      {
+       "slug": "factory-windmill",
+       "name": "Вітряки",
+       "en": "Windmills",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/factory-windmill.svg",
+         "size": 1330
+        },
+        "png": {
+         "path": "icons/png/factory-windmill.png",
+         "size": 21340
+        },
+        "eps": {
+         "path": "icons/eps/factory-windmill.eps",
+         "size": 395918
+        },
+        "pdf": {
+         "path": "icons/pdf/factory-windmill.pdf",
+         "size": 27619
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/factory-windmill.svg",
+         "size": 1241
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Цивільні будівлі",
+     "icons": [
+      {
+       "slug": "civil",
+       "name": "Цивільні будівлі",
+       "en": "Civil buildings",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/civil.svg",
+         "size": 1871
+        },
+        "png": {
+         "path": "icons/png/civil.png",
+         "size": 20153
+        },
+        "eps": {
+         "path": "icons/eps/civil.eps",
+         "size": 397850
+        },
+        "pdf": {
+         "path": "icons/pdf/civil.pdf",
+         "size": 28050
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/civil.svg",
+         "size": 1782
+        }
+       }
+      },
+      {
+       "slug": "civil-palace",
+       "name": "Палаци",
+       "en": "Palaces",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/civil-palace.svg",
+         "size": 2316
+        },
+        "png": {
+         "path": "icons/png/civil-palace.png",
+         "size": 19811
+        },
+        "eps": {
+         "path": "icons/eps/civil-palace.eps",
+         "size": 399122
+        },
+        "pdf": {
+         "path": "icons/pdf/civil-palace.pdf",
+         "size": 27790
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/civil-palace.svg",
+         "size": 2227
+        }
+       }
+      },
+      {
+       "slug": "civil-homestead",
+       "name": "Садиби, окремі історичні будинки",
+       "en": "Manors and historic houses",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/civil-homestead.svg",
+         "size": 1871
+        },
+        "png": {
+         "path": "icons/png/civil-homestead.png",
+         "size": 20153
+        },
+        "eps": {
+         "path": "icons/eps/civil-homestead.eps",
+         "size": 397898
+        },
+        "pdf": {
+         "path": "icons/pdf/civil-homestead.pdf",
+         "size": 28071
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/civil-homestead.svg",
+         "size": 1782
+        }
+       }
+      },
+      {
+       "slug": "civil-historical-city",
+       "name": "Старе місто, історична забудова",
+       "en": "Old town, historic quarter",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/civil-historical-city.svg",
+         "size": 2243
+        },
+        "png": {
+         "path": "icons/png/civil-historical-city.png",
+         "size": 19944
+        },
+        "eps": {
+         "path": "icons/eps/civil-historical-city.eps",
+         "size": 399554
+        },
+        "pdf": {
+         "path": "icons/pdf/civil-historical-city.pdf",
+         "size": 28038
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/civil-historical-city.svg",
+         "size": 2154
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Військові будівлі",
+     "icons": [
+      {
+       "slug": "military",
+       "name": "Військові будівлі",
+       "en": "Military buildings",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/military.svg",
+         "size": 1285
+        },
+        "png": {
+         "path": "icons/png/military.png",
+         "size": 19562
+        },
+        "eps": {
+         "path": "icons/eps/military.eps",
+         "size": 396290
+        },
+        "pdf": {
+         "path": "icons/pdf/military.pdf",
+         "size": 27644
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/military.svg",
+         "size": 1196
+        }
+       }
+      },
+      {
+       "slug": "military-castle",
+       "name": "Замки та форти",
+       "en": "Castles and forts",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/military-castle.svg",
+         "size": 1307
+        },
+        "png": {
+         "path": "icons/png/military-castle.png",
+         "size": 19811
+        },
+        "eps": {
+         "path": "icons/eps/military-castle.eps",
+         "size": 396334
+        },
+        "pdf": {
+         "path": "icons/pdf/military-castle.pdf",
+         "size": 27656
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/military-castle.svg",
+         "size": 1218
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Розваги",
+     "icons": [
+      {
+       "slug": "entertainment",
+       "name": "Розваги",
+       "en": "Entertainment",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/entertainment.svg",
+         "size": 3489
+        },
+        "png": {
+         "path": "icons/png/entertainment.png",
+         "size": 36777
+        },
+        "eps": {
+         "path": "icons/eps/entertainment.eps",
+         "size": 402662
+        },
+        "pdf": {
+         "path": "icons/pdf/entertainment.pdf",
+         "size": 28898
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/entertainment.svg",
+         "size": 3400
+        }
+       }
+      },
+      {
+       "slug": "entertainment-attractions",
+       "name": "Парки атракціонів",
+       "en": "Amusement parks",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/entertainment-attractions.svg",
+         "size": 3489
+        },
+        "png": {
+         "path": "icons/png/entertainment-attractions.png",
+         "size": 36777
+        },
+        "eps": {
+         "path": "icons/eps/entertainment-attractions.eps",
+         "size": 402702
+        },
+        "pdf": {
+         "path": "icons/pdf/entertainment-attractions.pdf",
+         "size": 28922
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/entertainment-attractions.svg",
+         "size": 3400
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Пам’ятки флори",
+     "icons": [
+      {
+       "slug": "flora",
+       "name": "Пам’ятки флори",
+       "en": "Flora",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/flora.svg",
+         "size": 1471
+        },
+        "png": {
+         "path": "icons/png/flora.png",
+         "size": 30725
+        },
+        "eps": {
+         "path": "icons/eps/flora.eps",
+         "size": 397110
+        },
+        "pdf": {
+         "path": "icons/pdf/flora.pdf",
+         "size": 27912
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/flora.svg",
+         "size": 1382
+        }
+       }
+      },
+      {
+       "slug": "flora-citypark",
+       "name": "Міські парки та сади",
+       "en": "City parks and gardens",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/flora-citypark.svg",
+         "size": 1564
+        },
+        "png": {
+         "path": "icons/png/flora-citypark.png",
+         "size": 26591
+        },
+        "eps": {
+         "path": "icons/eps/flora-citypark.eps",
+         "size": 397126
+        },
+        "pdf": {
+         "path": "icons/pdf/flora-citypark.pdf",
+         "size": 27952
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/flora-citypark.svg",
+         "size": 1475
+        }
+       }
+      },
+      {
+       "slug": "flora-denropark",
+       "name": "Дендропарки",
+       "en": "Arboretums",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/flora-denropark.svg",
+         "size": 1979
+        },
+        "png": {
+         "path": "icons/png/flora-denropark.png",
+         "size": 34354
+        },
+        "eps": {
+         "path": "icons/eps/flora-denropark.eps",
+         "size": 398062
+        },
+        "pdf": {
+         "path": "icons/pdf/flora-denropark.pdf",
+         "size": 28107
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/flora-denropark.svg",
+         "size": 1890
+        }
+       }
+      },
+      {
+       "slug": "flora-forest",
+       "name": "Лісопарки",
+       "en": "Forest parks",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/flora-forest.svg",
+         "size": 1471
+        },
+        "png": {
+         "path": "icons/png/flora-forest.png",
+         "size": 30725
+        },
+        "eps": {
+         "path": "icons/eps/flora-forest.eps",
+         "size": 397150
+        },
+        "pdf": {
+         "path": "icons/pdf/flora-forest.pdf",
+         "size": 27925
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/flora-forest.svg",
+         "size": 1382
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Пам’ятки фауни",
+     "icons": [
+      {
+       "slug": "fauna",
+       "name": "Пам’ятки фауни",
+       "en": "Fauna",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/fauna.svg",
+         "size": 1598
+        },
+        "png": {
+         "path": "icons/png/fauna.png",
+         "size": 25200
+        },
+        "eps": {
+         "path": "icons/eps/fauna.eps",
+         "size": 396910
+        },
+        "pdf": {
+         "path": "icons/pdf/fauna.pdf",
+         "size": 27946
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/fauna.svg",
+         "size": 1509
+        }
+       }
+      },
+      {
+       "slug": "fauna-zoo",
+       "name": "Зоопарки та звіринці",
+       "en": "Zoos",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/fauna-zoo.svg",
+         "size": 1894
+        },
+        "png": {
+         "path": "icons/png/fauna-zoo.png",
+         "size": 24975
+        },
+        "eps": {
+         "path": "icons/eps/fauna-zoo.eps",
+         "size": 398046
+        },
+        "pdf": {
+         "path": "icons/pdf/fauna-zoo.pdf",
+         "size": 28195
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/fauna-zoo.svg",
+         "size": 1805
+        }
+       }
+      },
+      {
+       "slug": "fauna-animal-in-nature",
+       "name": "Звірі в дикій природі",
+       "en": "Wildlife",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/fauna-animal-in-nature.svg",
+         "size": 1598
+        },
+        "png": {
+         "path": "icons/png/fauna-animal-in-nature.png",
+         "size": 25195
+        },
+        "eps": {
+         "path": "icons/eps/fauna-animal-in-nature.eps",
+         "size": 396986
+        },
+        "pdf": {
+         "path": "icons/pdf/fauna-animal-in-nature.pdf",
+         "size": 27985
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/fauna-animal-in-nature.svg",
+         "size": 1509
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Земельні пам’ятки",
+     "icons": [
+      {
+       "slug": "land-object",
+       "name": "Земельні пам’ятки",
+       "en": "Landforms",
+       "kind": "general",
+       "also": [
+        "Гори, вершини, пагорби"
+       ],
+       "files": {
+        "svg": {
+         "path": "icons/svg/land-object.svg",
+         "size": 720
+        },
+        "png": {
+         "path": "icons/png/land-object.png",
+         "size": 23821
+        },
+        "eps": {
+         "path": "icons/eps/land-object.eps",
+         "size": 394550
+        },
+        "pdf": {
+         "path": "icons/pdf/land-object.pdf",
+         "size": 27394
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/land-object.svg",
+         "size": 631
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Водні пам’ятки",
+     "icons": [
+      {
+       "slug": "water-object",
+       "name": "Водні пам’ятки",
+       "en": "Water features",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/water-object.svg",
+         "size": 1777
+        },
+        "png": {
+         "path": "icons/png/water-object.png",
+         "size": 28184
+        },
+        "eps": {
+         "path": "icons/eps/water-object.eps",
+         "size": 397250
+        },
+        "pdf": {
+         "path": "icons/pdf/water-object.pdf",
+         "size": 27999
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/water-object.svg",
+         "size": 1688
+        }
+       }
+      },
+      {
+       "slug": "water-object-lake",
+       "name": "Озера, ставки та затоплені кар’єри",
+       "en": "Lakes, ponds and flooded quarries",
+       "kind": "specific",
+       "files": {
+        "svg": {
+         "path": "icons/svg/water-object-lake.svg",
+         "size": 1777
+        },
+        "png": {
+         "path": "icons/png/water-object-lake.png",
+         "size": 28184
+        },
+        "eps": {
+         "path": "icons/eps/water-object-lake.eps",
+         "size": 397282
+        },
+        "pdf": {
+         "path": "icons/pdf/water-object-lake.pdf",
+         "size": 28009
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/water-object-lake.svg",
+         "size": 1688
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Оглядова точка",
+     "icons": [
+      {
+       "slug": "viewpoint",
+       "name": "Оглядова точка",
+       "en": "Viewpoint",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/viewpoint.svg",
+         "size": 919
+        },
+        "png": {
+         "path": "icons/png/viewpoint.png",
+         "size": 31163
+        },
+        "eps": {
+         "path": "icons/eps/viewpoint.eps",
+         "size": 395222
+        },
+        "pdf": {
+         "path": "icons/pdf/viewpoint.pdf",
+         "size": 27491
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/viewpoint.svg",
+         "size": 830
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Точка інтересу",
+     "icons": [
+      {
+       "slug": "default",
+       "name": "Точка інтересу",
+       "en": "Point of interest",
+       "kind": "general",
+       "files": {
+        "svg": {
+         "path": "icons/svg/default.svg",
+         "size": 1187
+        },
+        "png": {
+         "path": "icons/png/default.png",
+         "size": 28478
+        },
+        "eps": {
+         "path": "icons/eps/default.eps",
+         "size": 396090
+        },
+        "pdf": {
+         "path": "icons/pdf/default.pdf",
+         "size": 27593
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/default.svg",
+         "size": 1098
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "additional",
+   "title": "ІІ. Додаткові піктограми",
+   "groups": [
+    {
+     "title": "Всесвітня спадщина ЮНЕСКО",
+     "icons": [
+      {
+       "slug": "UNESCO",
+       "name": "Всесвітня спадщина ЮНЕСКО",
+       "en": "UNESCO World Heritage",
+       "kind": "badge",
+       "files": {
+        "svg": {
+         "path": "icons/svg/UNESCO.svg",
+         "size": 3849
+        },
+        "png": {
+         "path": "icons/png/UNESCO.png",
+         "size": 32906
+        },
+        "eps": {
+         "path": "icons/eps/UNESCO.eps",
+         "size": 366082
+        },
+        "pdf": {
+         "path": "icons/pdf/UNESCO.pdf",
+         "size": 28621
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/UNESCO.svg",
+         "size": 3775
+        }
+       }
+      }
+     ]
+    },
+    {
+     "title": "Рекомендації ДАРТ",
+     "icons": [
+      {
+       "slug": "dart-recommend",
+       "name": "ДАРТ рекомендує",
+       "en": "Recommended by DART",
+       "kind": "badge",
+       "files": {
+        "svg": {
+         "path": "icons/svg/dart-recommend.svg",
+         "size": 5348
+        },
+        "png": {
+         "path": "icons/png/dart-recommend.png",
+         "size": 37878
+        },
+        "eps": {
+         "path": "icons/eps/dart-recommend.eps",
+         "size": 384354
+        },
+        "pdf": {
+         "path": "icons/pdf/dart-recommend.pdf",
+         "size": 29789
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/dart-recommend.svg",
+         "size": 5274
+        }
+       }
+      },
+      {
+       "slug": "dart-top100",
+       "name": "ДАРТ ТОП-100",
+       "en": "DART Top 100",
+       "kind": "badge",
+       "files": {
+        "svg": {
+         "path": "icons/svg/dart-top100.svg",
+         "size": 4360
+        },
+        "png": {
+         "path": "icons/png/dart-top100.png",
+         "size": 34480
+        },
+        "eps": {
+         "path": "icons/eps/dart-top100.eps",
+         "size": 374706
+        },
+        "pdf": {
+         "path": "icons/pdf/dart-top100.pdf",
+         "size": 29390
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/dart-top100.svg",
+         "size": 4286
+        }
+       }
+      },
+      {
+       "slug": "dart-top30",
+       "name": "ДАРТ ТОП-30",
+       "en": "DART Top 30",
+       "kind": "badge",
+       "files": {
+        "svg": {
+         "path": "icons/svg/dart-top30.svg",
+         "size": 4370
+        },
+        "png": {
+         "path": "icons/png/dart-top30.png",
+         "size": 34662
+        },
+        "eps": {
+         "path": "icons/eps/dart-top30.eps",
+         "size": 374954
+        },
+        "pdf": {
+         "path": "icons/pdf/dart-top30.pdf",
+         "size": 29488
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/dart-top30.svg",
+         "size": 4296
+        }
+       }
+      },
+      {
+       "slug": "dart-top10",
+       "name": "ДАРТ ТОП-10",
+       "en": "DART Top 10",
+       "kind": "badge",
+       "files": {
+        "svg": {
+         "path": "icons/svg/dart-top10.svg",
+         "size": 4144
+        },
+        "png": {
+         "path": "icons/png/dart-top10.png",
+         "size": 33435
+        },
+        "eps": {
+         "path": "icons/eps/dart-top10.eps",
+         "size": 374226
+        },
+        "pdf": {
+         "path": "icons/pdf/dart-top10.pdf",
+         "size": 29362
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/dart-top10.svg",
+         "size": 4070
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "services",
+   "title": "ІІІ. Піктограми сервісів",
+   "groups": [
+    {
+     "title": "Основні сервіси",
+     "icons": [
+      {
+       "slug": "service-fuel",
+       "name": "Автозаправна станція",
+       "en": "Fuel station",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-fuel.svg",
+         "size": 1191
+        },
+        "png": {
+         "path": "icons/png/service-fuel.png",
+         "size": 9754
+        },
+        "eps": {
+         "path": "icons/eps/service-fuel.eps",
+         "size": 292854
+        },
+        "pdf": {
+         "path": "icons/pdf/service-fuel.pdf",
+         "size": 27739
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-fuel.svg",
+         "size": 1102
+        }
+       }
+      },
+      {
+       "slug": "service-charger",
+       "name": "Електрозарядна станція",
+       "en": "EV charging station",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-charger.svg",
+         "size": 1260
+        },
+        "png": {
+         "path": "icons/png/service-charger.png",
+         "size": 9175
+        },
+        "eps": {
+         "path": "icons/eps/service-charger.eps",
+         "size": 293098
+        },
+        "pdf": {
+         "path": "icons/pdf/service-charger.pdf",
+         "size": 27769
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-charger.svg",
+         "size": 1171
+        }
+       }
+      },
+      {
+       "slug": "service-gas",
+       "name": "Автозаправна газова станція",
+       "en": "LPG station",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-gas.svg",
+         "size": 1197
+        },
+        "png": {
+         "path": "icons/png/service-gas.png",
+         "size": 9563
+        },
+        "eps": {
+         "path": "icons/eps/service-gas.eps",
+         "size": 292858
+        },
+        "pdf": {
+         "path": "icons/pdf/service-gas.pdf",
+         "size": 27739
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-gas.svg",
+         "size": 1108
+        }
+       }
+      },
+      {
+       "slug": "service-sto",
+       "name": "Пункт технічного обслуговування автомобілів",
+       "en": "Car service",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-sto.svg",
+         "size": 644
+        },
+        "png": {
+         "path": "icons/png/service-sto.png",
+         "size": 6708
+        },
+        "eps": {
+         "path": "icons/eps/service-sto.eps",
+         "size": 291338
+        },
+        "pdf": {
+         "path": "icons/pdf/service-sto.pdf",
+         "size": 27409
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-sto.svg",
+         "size": 555
+        }
+       }
+      },
+      {
+       "slug": "service-cafe",
+       "name": "Ресторан",
+       "en": "Restaurant",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-cafe.svg",
+         "size": 907
+        },
+        "png": {
+         "path": "icons/png/service-cafe.png",
+         "size": 9897
+        },
+        "eps": {
+         "path": "icons/eps/service-cafe.eps",
+         "size": 291910
+        },
+        "pdf": {
+         "path": "icons/pdf/service-cafe.pdf",
+         "size": 27557
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-cafe.svg",
+         "size": 818
+        }
+       }
+      },
+      {
+       "slug": "service-hotel",
+       "name": "Готель",
+       "en": "Hotel",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-hotel.svg",
+         "size": 780
+        },
+        "png": {
+         "path": "icons/png/service-hotel.png",
+         "size": 6427
+        },
+        "eps": {
+         "path": "icons/eps/service-hotel.eps",
+         "size": 291438
+        },
+        "pdf": {
+         "path": "icons/pdf/service-hotel.pdf",
+         "size": 27424
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-hotel.svg",
+         "size": 691
+        }
+       }
+      },
+      {
+       "slug": "service-camping",
+       "name": "Кемпінг",
+       "en": "Camping",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-camping.svg",
+         "size": 1200
+        },
+        "png": {
+         "path": "icons/png/service-camping.png",
+         "size": 9917
+        },
+        "eps": {
+         "path": "icons/eps/service-camping.eps",
+         "size": 291906
+        },
+        "pdf": {
+         "path": "icons/pdf/service-camping.pdf",
+         "size": 27489
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-camping.svg",
+         "size": 1111
+        }
+       }
+      },
+      {
+       "slug": "service-child-zone",
+       "name": "Дитяча зона",
+       "en": "Children’s area",
+       "kind": "service",
+       "files": {
+        "svg": {
+         "path": "icons/svg/service-child-zone.svg",
+         "size": 765
+        },
+        "png": {
+         "path": "icons/png/service-child-zone.png",
+         "size": 8955
+        },
+        "eps": {
+         "path": "icons/eps/service-child-zone.eps",
+         "size": 291714
+        },
+        "pdf": {
+         "path": "icons/pdf/service-child-zone.pdf",
+         "size": 27519
+        },
+        "svg-transparent": {
+         "path": "icons/svg-transparent/service-child-zone.svg",
+         "size": 676
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
