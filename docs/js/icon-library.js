@@ -5,7 +5,8 @@
   'use strict';
 
   var DATA_URL = 'data/icons.json';
-  var FORMAT_LABEL = { svg: 'SVG', png: 'PNG', eps: 'EPS', pdf: 'PDF', 'svg-transparent': 'SVG без тла' };
+  var FORMATS = ['svg', 'png', 'eps', 'pdf'];
+  var FORMAT_LABEL = { svg: 'SVG', png: 'PNG', eps: 'EPS', pdf: 'PDF' };
   var KIND_LABEL = {
     general: 'Загальна піктограма категорії',
     specific: 'Піктограма окремої категорії',
@@ -100,11 +101,11 @@
       }).join('');
 
     var downloads = '<a class="button" href="' + esc(data.zips.all) + '" download>Завантажити все (ZIP)</a>' +
-      ['svg', 'png', 'eps', 'pdf', 'svg-transparent'].filter(function (f) { return data.zips[f]; }).map(function (f) {
+      FORMATS.filter(function (f) { return data.zips[f]; }).map(function (f) {
         return '<a class="button button-secondary" href="' + esc(data.zips[f]) + '" download>' + FORMAT_LABEL[f] + '</a>';
       }).join('') +
       Object.keys(data.fullSet || {}).map(function (ext) {
-        return '<a class="button button-secondary" href="' + esc(data.fullSet[ext]) + '" download>Набір ' + ext.toUpperCase() + '</a>';
+        return '<a class="button button-secondary" href="' + esc(data.fullSet[ext]) + '" download title="Робочий аркуш з усіма піктограмами на коричневому тлі">Аркуш ' + ext.toUpperCase() + '</a>';
       }).join('');
 
     host.innerHTML =
@@ -165,7 +166,7 @@
       if (!it) return;
       state.current = index;
       var ic = it.icon;
-      var formats = ['svg', 'png', 'eps', 'pdf', 'svg-transparent'].filter(function (f) { return ic.files[f]; });
+      var formats = FORMATS.filter(function (f) { return ic.files[f]; });
       var also = ic.also && ic.also.length ? '<p class="lib-dialog__also">Також для: ' + esc(ic.also.join(', ')) + '</p>' : '';
       dialog.innerHTML =
         '<div class="lib-dialog__inner">' +
@@ -178,19 +179,15 @@
             '<h3 id="lib-dialog-title" class="lib-dialog__name">' + esc(ic.name) + '</h3>' +
             '<p class="lib-dialog__en">' + esc(ic.en || '') + '</p>' +
             also +
-            '<div class="lib-dialog__bg" role="group" aria-label="Тло превʼю">' +
-              '<button type="button" class="lib-bg is-active" data-bg="default">З тлом</button>' +
-              '<button type="button" class="lib-bg" data-bg="transparent">Без тла</button>' +
-            '</div>' +
             '<p class="lib-dialog__label">Завантажити</p>' +
             '<div class="lib-dialog__files">' +
               formats.map(function (f) {
-                var ext = f === 'svg-transparent' ? 'svg' : f;
-                var name = ic.slug + (f === 'svg-transparent' ? '-transparent' : '') + '.' + ext;
+                var name = ic.slug + '.' + f;
                 return '<a class="lib-file" href="' + esc(ic.files[f].path) + '" download="' + esc(name) + '">' +
                   '<strong>' + FORMAT_LABEL[f] + '</strong><span>' + humanSize(ic.files[f].size) + '</span></a>';
               }).join('') +
             '</div>' +
+            '<p class="lib-dialog__note">Файли без тла: піктограма на прозорому фоні. Коричневе тло тут лише для перегляду.</p>' +
             '<div class="lib-dialog__actions">' +
               '<button type="button" class="lib-action" data-action="copy-svg">Копіювати SVG</button>' +
               '<button type="button" class="lib-action" data-action="copy-link">Копіювати посилання</button>' +
@@ -204,17 +201,6 @@
         '</div>';
 
       dialog.querySelector('.lib-dialog__close').addEventListener('click', function () { dialog.close(); });
-      var previewImg = dialog.querySelector('.lib-dialog__preview img');
-      var preview = dialog.querySelector('.lib-dialog__preview');
-      dialog.querySelectorAll('.lib-bg').forEach(function (b) {
-        b.addEventListener('click', function () {
-          dialog.querySelectorAll('.lib-bg').forEach(function (x) { x.classList.remove('is-active'); });
-          b.classList.add('is-active');
-          var t = b.getAttribute('data-bg') === 'transparent';
-          previewImg.src = (t && ic.files['svg-transparent'] ? ic.files['svg-transparent'] : ic.files.svg).path;
-          preview.classList.toggle('is-transparent', t);
-        });
-      });
       dialog.querySelector('[data-action="copy-svg"]').addEventListener('click', function (e) {
         var btn = e.currentTarget;
         fetch(ic.files.svg.path).then(function (r) { return r.text(); }).then(function (svg) {

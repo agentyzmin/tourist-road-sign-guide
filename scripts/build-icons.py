@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """Build the icon library for the guide.
 
-Reads the production icon set (Google Drive, `7. Production/Icons`), copies every icon into
-`docs/icons/<format>/<slug>.<ext>` with short names, derives transparent SVGs (brown background
-removed), packs ZIP archives, writes `docs/data/icons.json` and regenerates the gallery block
-inside `docs/appendix-a-icons.md` (between `<!-- icons:start -->` and `<!-- icons:end -->`).
+Reads the production icon set (Google Drive, `7. Production/Icons`), removes the brown
+background from every SVG and renders all download formats from that transparent SVG:
+`docs/icons/{svg,png,eps,pdf}/<slug>.<ext>`. PNG keeps the pixel size of the production PNG;
+PDF and EPS are vector, 1 SVG unit = 1 pt, i.e. the artboard size without the 10 mm bleed.
+Then it copies the full-set source files (DWG, AI, PDF — these keep the background), packs
+ZIP archives, writes `docs/data/icons.json` and regenerates the gallery block inside
+`docs/appendix-a-icons.md` (between `<!-- icons:start -->` and `<!-- icons:end -->`).
+
+Requires cairosvg (`pip install cairosvg`) and the cairo library (`brew install cairo`).
 
 Usage:
     python3 scripts/build-icons.py [--src "<path to Production/Icons>"] [--no-copy]
@@ -185,19 +190,94 @@ def all_icons():
 
 
 # --------------------------------------------------------------------------- copy & derive
-def copy_sources(src: Path) -> None:
+_STYLE_RULE_RE = re.compile(r"([^{}<>]+)\{([^}]*)\}")
+_RECT_RE = re.compile(r"<rect\b[^>]*/>|<rect\b[^>]*></rect>")
+
+
+def transparent_svg(svg: str) -> str:
+    """Remove the brown background rectangle (the bleed rect drawn behind every icon)
+    and the now unused brown style rules."""
+    brown_classes = set()
+    for m in _STYLE_RULE_RE.finditer(svg):
+        if BROWN in m.group(2).lower():
+            brown_classes.update(re.findall(r"\.(cls-\d+)", m.group(1)))
+
+    def is_bg(rect: str) -> bool:
+        cls = re.search(r'class="([^"]+)"', rect)
+        if cls and set(cls.group(1).split()) & brown_classes:
+            return True
+        return BROWN in rect.lower()
+
+    out = _RECT_RE.sub(lambda m: "" if is_bg(m.group(0)) else m.group(0), svg)
+    out = re.sub(r'<g id="bg">\s*</g>', "", out)
+
+    # Drop style rules that only paint brown and are no longer used by any element.
+    def drop_rule(m: re.Match) -> str:
+        if BROWN not in m.group(2).lower():
+            return m.group(0)
+        classes = re.findall(r"\.(cls-\d+)", m.group(1))
+        if any(re.search(r'class="[^"]*\b%s\b' % c, out) for c in classes):
+            return m.group(0)
+        return ""
+
+    out = re.sub(r"(<style[^>]*>)(.*?)(</style>)",
+                 lambda m: m.group(1) + _STYLE_RULE_RE.sub(drop_rule, m.group(2)) + m.group(3),
+                 out, flags=re.S)
+    return out
+
+
+def _cairosvg():
+    try:
+        import cairosvg  # noqa: F401
+    except OSError:
+        # Homebrew cairo is not on the default dyld path on macOS.
+        import os
+        os.environ.setdefault("DYLD_FALLBACK_LIBRARY_PATH", "/opt/homebrew/lib:/usr/local/lib")
+        sys.exit("cairo not found: run with DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib, "
+                 "or `brew install cairo`")
+    import cairosvg
+    return cairosvg
+
+
+def png_size(path: Path) -> tuple[int, int] | None:
+    try:
+        with path.open("rb") as f:
+            head = f.read(24)
+        if head[:8] != b"\x89PNG\r\n\x1a\n":
+            return None
+        return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+    except OSError:
+        return None
+
+
+def build_downloads(src: Path) -> None:
+    cairosvg = _cairosvg()
     for fmt in FORMATS:
         (OUT / fmt).mkdir(parents=True, exist_ok=True)
     (OUT / "all").mkdir(parents=True, exist_ok=True)
 
     missing = []
     for _, _, icon in all_icons():
-        for fmt in FORMATS:
-            source = src / fmt.upper() / f"{SRC_PREFIX}{icon['slug']}.{fmt}"
-            if not source.exists():
-                missing.append(str(source))
-                continue
-            shutil.copy2(source, OUT / fmt / f"{icon['slug']}.{fmt}")
+        slug = icon["slug"]
+        source = src / "SVG" / f"{SRC_PREFIX}{slug}.svg"
+        if not source.exists():
+            missing.append(str(source))
+            continue
+        original = source.read_text(encoding="utf-8")
+        svg = transparent_svg(original)
+        if svg == original:
+            print(f"WARNING: no background removed in {source.name}", file=sys.stderr)
+        svg_path = OUT / "svg" / f"{slug}.svg"
+        svg_path.write_text(svg, encoding="utf-8")
+        data = svg.encode("utf-8")
+
+        size = png_size(src / "PNG" / f"{SRC_PREFIX}{slug}.png")
+        kw = {"output_width": size[0], "output_height": size[1]} if size else {"scale": 2.6}
+        cairosvg.svg2png(bytestring=data, write_to=str(OUT / "png" / f"{slug}.png"), **kw)
+        # dpi=72: one SVG user unit (pt in the Illustrator export) becomes one PDF/EPS point.
+        cairosvg.svg2pdf(bytestring=data, write_to=str(OUT / "pdf" / f"{slug}.pdf"), dpi=72)
+        cairosvg.svg2eps(bytestring=data, write_to=str(OUT / "eps" / f"{slug}.eps"), dpi=72)
+
     full = {
         "dwg": src / "DWG" / "Tourist Road Signs - Icons.dwg",
         "ai": src / "Tourist Road Signs - Icons.ai",
@@ -209,7 +289,11 @@ def copy_sources(src: Path) -> None:
         else:
             missing.append(str(source))
 
-    # Anything in the source that the catalogue does not know about.
+    # Leftover from earlier builds that kept the background in the main folders.
+    old = OUT / "svg-transparent"
+    if old.exists():
+        shutil.rmtree(old)
+
     known = {icon["slug"] for _, _, icon in all_icons()}
     for f in (src / "SVG").glob(f"{SRC_PREFIX}*.svg"):
         slug = f.stem[len(SRC_PREFIX):]
@@ -219,45 +303,12 @@ def copy_sources(src: Path) -> None:
         print("WARNING: missing source files:\n  " + "\n  ".join(missing), file=sys.stderr)
 
 
-_STYLE_RE = re.compile(r"\.(cls-\d+)\{([^}]*)\}")
-_RECT_RE = re.compile(r"<rect\b[^>]*/>|<rect\b[^>]*></rect>")
-
-
-def transparent_svg(svg: str) -> str:
-    """Remove the brown background rectangle (the bleed rect drawn behind every icon)."""
-    brown_classes = {m.group(1) for m in _STYLE_RE.finditer(svg) if BROWN in m.group(2).lower()}
-
-    def is_bg(rect: str) -> bool:
-        cls = re.search(r'class="([^"]+)"', rect)
-        if cls and cls.group(1) in brown_classes:
-            return True
-        return BROWN in rect.lower()
-
-    out = _RECT_RE.sub(lambda m: "" if is_bg(m.group(0)) else m.group(0), svg)
-    out = re.sub(r'<g id="bg">\s*</g>', "", out)
-    return out
-
-
-def derive_transparent() -> None:
-    dst = OUT / "svg-transparent"
-    dst.mkdir(parents=True, exist_ok=True)
-    for _, _, icon in all_icons():
-        path = OUT / "svg" / f"{icon['slug']}.svg"
-        if not path.exists():
-            continue
-        svg = path.read_text(encoding="utf-8")
-        out = transparent_svg(svg)
-        if out == svg:
-            print(f"WARNING: no background removed in {path.name}", file=sys.stderr)
-        (dst / path.name).write_text(out, encoding="utf-8")
-
-
 # --------------------------------------------------------------------------- zips
 def build_zips() -> dict[str, str]:
     zdir = OUT / "zip"
     zdir.mkdir(parents=True, exist_ok=True)
     result = {}
-    per_format = FORMATS + ["svg-transparent"]
+    per_format = list(FORMATS)
     for fmt in per_format:
         name = f"{FULL_SET_NAME}-{fmt}.zip"
         with zipfile.ZipFile(zdir / name, "w", zipfile.ZIP_DEFLATED) as z:
@@ -285,7 +336,8 @@ def human_size(n: int) -> str:
 def write_json(zips: dict[str, str]) -> dict:
     data = {
         "version": "1.0",
-        "formats": FORMATS + ["svg-transparent"],
+        "formats": FORMATS,
+        "background": "none",
         "zips": zips,
         "fullSet": {
             ext: f"icons/all/{FULL_SET_NAME}.{ext}"
@@ -300,9 +352,8 @@ def write_json(zips: dict[str, str]) -> dict:
             g = {"title": group["title"], "icons": []}
             for icon in group["icons"]:
                 files = {}
-                for fmt in FORMATS + ["svg-transparent"]:
-                    ext = "svg" if fmt == "svg-transparent" else fmt
-                    p = OUT / fmt / f"{icon['slug']}.{ext}"
+                for fmt in FORMATS:
+                    p = OUT / fmt / f"{icon['slug']}.{fmt}"
                     if p.exists():
                         files[fmt] = {"path": f"icons/{fmt}/{p.name}", "size": p.stat().st_size}
                 g["icons"].append({**icon, "files": files})
@@ -329,9 +380,9 @@ def card_html(icon: dict) -> str:
     name = icon["name"]
     also = f'<p class="icon-card__also">{", ".join(icon["also"])}</p>' if icon.get("also") else ""
     links = "".join(
-        f'<a class="icon-dl" href="{files[fmt]["path"]}" download="{slug}.{"svg" if fmt == "svg-transparent" else fmt}" '
-        f'title="{human_size(files[fmt]["size"])}">{"SVG без тла" if fmt == "svg-transparent" else fmt.upper()}</a>'
-        for fmt in FORMATS + ["svg-transparent"] if fmt in files
+        f'<a class="icon-dl" href="{files[fmt]["path"]}" download="{slug}.{fmt}" '
+        f'title="{human_size(files[fmt]["size"])}">{fmt.upper()}</a>'
+        for fmt in FORMATS if fmt in files
     )
     search = " ".join([name, icon.get("en", ""), slug] + icon.get("also", [])).lower()
     return (
@@ -356,11 +407,10 @@ def markdown_block(data: dict) -> str:
     parts.append('  <input type="search" id="icon-search" class="icon-search" placeholder="Знайти піктограму…" aria-label="Пошук піктограми">')
     parts.append('  <div class="icon-toolbar__downloads">')
     parts.append(f'    <a class="button" href="{zips["all"]}" download>Завантажити все (ZIP)</a>')
-    for fmt in FORMATS + ["svg-transparent"]:
-        label = "SVG без тла" if fmt == "svg-transparent" else fmt.upper()
-        parts.append(f'    <a class="button button-secondary" href="{zips[fmt]}" download>{label}</a>')
+    for fmt in FORMATS:
+        parts.append(f'    <a class="button button-secondary" href="{zips[fmt]}" download>{fmt.upper()}</a>')
     for ext, path in full.items():
-        parts.append(f'    <a class="button button-secondary" href="{path}" download>Весь набір {ext.upper()}</a>')
+        parts.append(f'    <a class="button button-secondary" href="{path}" download>Аркуш {ext.upper()} (з тлом)</a>')
     parts.append('  </div>')
     parts.append('</div>')
     parts.append('<p class="icon-empty" hidden>Нічого не знайшли. Спробуйте іншу назву або англійський відповідник.</p>')
@@ -403,8 +453,7 @@ def main() -> None:
         src = Path(args.src)
         if not src.exists():
             sys.exit(f"source folder not found: {src}")
-        copy_sources(src)
-    derive_transparent()
+        build_downloads(src)
     zips = build_zips()
     data = write_json(zips)
     write_markdown(data)

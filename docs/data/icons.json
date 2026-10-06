@@ -4,15 +4,14 @@
   "svg",
   "png",
   "eps",
-  "pdf",
-  "svg-transparent"
+  "pdf"
  ],
+ "background": "none",
  "zips": {
   "svg": "icons/zip/TouristRoadSigns-Icons-svg.zip",
   "png": "icons/zip/TouristRoadSigns-Icons-png.zip",
   "eps": "icons/zip/TouristRoadSigns-Icons-eps.zip",
   "pdf": "icons/zip/TouristRoadSigns-Icons-pdf.zip",
-  "svg-transparent": "icons/zip/TouristRoadSigns-Icons-svg-transparent.zip",
   "all": "icons/zip/TouristRoadSigns-Icons-all.zip"
  },
  "fullSet": {
@@ -36,23 +35,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/manufacture.svg",
-         "size": 785
+         "size": 675
         },
         "png": {
          "path": "icons/png/manufacture.png",
-         "size": 21963
+         "size": 13540
         },
         "eps": {
          "path": "icons/eps/manufacture.eps",
-         "size": 394698
+         "size": 3117
         },
         "pdf": {
          "path": "icons/pdf/manufacture.pdf",
-         "size": 27395
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/manufacture.svg",
-         "size": 696
+         "size": 1312
         }
        }
       }
@@ -69,23 +64,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/trading.svg",
-         "size": 2416
+         "size": 2306
         },
         "png": {
          "path": "icons/png/trading.png",
-         "size": 24048
+         "size": 15532
         },
         "eps": {
          "path": "icons/eps/trading.eps",
-         "size": 397990
+         "size": 5178
         },
         "pdf": {
          "path": "icons/pdf/trading.pdf",
-         "size": 27748
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/trading.svg",
-         "size": 2327
+         "size": 1930
         }
        }
       }
@@ -102,23 +93,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/cemetery.svg",
-         "size": 812
+         "size": 702
         },
         "png": {
          "path": "icons/png/cemetery.png",
-         "size": 15245
+         "size": 8384
         },
         "eps": {
          "path": "icons/eps/cemetery.eps",
-         "size": 394586
+         "size": 3204
         },
         "pdf": {
          "path": "icons/pdf/cemetery.pdf",
-         "size": 27228
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/cemetery.svg",
-         "size": 723
+         "size": 1295
         }
        }
       },
@@ -130,23 +117,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/cemetery-military.svg",
-         "size": 1283
+         "size": 1173
         },
         "png": {
          "path": "icons/png/cemetery-military.png",
-         "size": 23209
+         "size": 14642
         },
         "eps": {
          "path": "icons/eps/cemetery-military.eps",
-         "size": 395318
+         "size": 3400
         },
         "pdf": {
          "path": "icons/pdf/cemetery-military.pdf",
-         "size": 27388
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/cemetery-military.svg",
-         "size": 1194
+         "size": 1361
         }
        }
       }
@@ -166,23 +149,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/memorial.svg",
-         "size": 689
+         "size": 579
         },
         "png": {
          "path": "icons/png/memorial.png",
-         "size": 16103
+         "size": 8189
         },
         "eps": {
          "path": "icons/eps/memorial.eps",
-         "size": 394074
+         "size": 2860
         },
         "pdf": {
          "path": "icons/pdf/memorial.pdf",
-         "size": 27253
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/memorial.svg",
-         "size": 600
+         "size": 1199
         }
        }
       }
@@ -199,23 +178,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/archeology.svg",
-         "size": 5940
+         "size": 5830
         },
         "png": {
          "path": "icons/png/archeology.png",
-         "size": 35377
+         "size": 25308
         },
         "eps": {
          "path": "icons/eps/archeology.eps",
-         "size": 409818
+         "size": 11762
         },
         "pdf": {
          "path": "icons/pdf/archeology.pdf",
-         "size": 32064
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/archeology.svg",
-         "size": 5851
+         "size": 4813
         }
        }
       }
@@ -232,23 +207,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/recreation-water.svg",
-         "size": 2124
+         "size": 2014
         },
         "png": {
          "path": "icons/png/recreation-water.png",
-         "size": 31856
+         "size": 21981
         },
         "eps": {
          "path": "icons/eps/recreation-water.eps",
-         "size": 398738
+         "size": 5424
         },
         "pdf": {
          "path": "icons/pdf/recreation-water.pdf",
-         "size": 28339
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/recreation-water.svg",
-         "size": 2035
+         "size": 2222
         }
        }
       },
@@ -260,23 +231,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/recreation-water-beach.svg",
-         "size": 2124
+         "size": 2014
         },
         "png": {
          "path": "icons/png/recreation-water-beach.png",
-         "size": 31856
+         "size": 21981
         },
         "eps": {
          "path": "icons/eps/recreation-water-beach.eps",
-         "size": 398766
+         "size": 5424
         },
         "pdf": {
          "path": "icons/pdf/recreation-water-beach.pdf",
-         "size": 28344
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/recreation-water-beach.svg",
-         "size": 2035
+         "size": 2222
         }
        }
       }
@@ -293,23 +260,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/recreation-snow.svg",
-         "size": 1060
+         "size": 950
         },
         "png": {
          "path": "icons/png/recreation-snow.png",
-         "size": 18919
+         "size": 10773
         },
         "eps": {
          "path": "icons/eps/recreation-snow.eps",
-         "size": 395530
+         "size": 3676
         },
         "pdf": {
          "path": "icons/pdf/recreation-snow.pdf",
-         "size": 27588
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/recreation-snow.svg",
-         "size": 971
+         "size": 1532
         }
        }
       }
@@ -326,23 +289,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/recreation-ground.svg",
-         "size": 1130
+         "size": 1020
         },
         "png": {
          "path": "icons/png/recreation-ground.png",
-         "size": 24813
+         "size": 16601
         },
         "eps": {
          "path": "icons/eps/recreation-ground.eps",
-         "size": 395626
+         "size": 3641
         },
         "pdf": {
          "path": "icons/pdf/recreation-ground.pdf",
-         "size": 27653
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/recreation-ground.svg",
-         "size": 1041
+         "size": 1558
         }
        }
       },
@@ -354,23 +313,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/recreation-ground-hiking.svg",
-         "size": 1130
+         "size": 1020
         },
         "png": {
          "path": "icons/png/recreation-ground-hiking.png",
-         "size": 24813
+         "size": 16601
         },
         "eps": {
          "path": "icons/eps/recreation-ground-hiking.eps",
-         "size": 395654
+         "size": 3641
         },
         "pdf": {
          "path": "icons/pdf/recreation-ground-hiking.pdf",
-         "size": 27667
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/recreation-ground-hiking.svg",
-         "size": 1041
+         "size": 1558
         }
        }
       }
@@ -387,23 +342,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/cultural.svg",
-         "size": 857
+         "size": 747
         },
         "png": {
          "path": "icons/png/cultural.png",
-         "size": 14688
+         "size": 7397
         },
         "eps": {
          "path": "icons/eps/cultural.eps",
-         "size": 394822
+         "size": 2970
         },
         "pdf": {
          "path": "icons/pdf/cultural.pdf",
-         "size": 27286
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/cultural.svg",
-         "size": 768
+         "size": 1219
         }
        }
       },
@@ -415,23 +366,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/cultural-museum.svg",
-         "size": 857
+         "size": 747
         },
         "png": {
          "path": "icons/png/cultural-museum.png",
-         "size": 14688
+         "size": 7397
         },
         "eps": {
          "path": "icons/eps/cultural-museum.eps",
-         "size": 394846
+         "size": 2970
         },
         "pdf": {
          "path": "icons/pdf/cultural-museum.pdf",
-         "size": 27299
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/cultural-museum.svg",
-         "size": 768
+         "size": 1219
         }
        }
       },
@@ -443,23 +390,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/cultural-cinema.svg",
-         "size": 1091
+         "size": 981
         },
         "png": {
          "path": "icons/png/cultural-cinema.png",
-         "size": 19740
+         "size": 12465
         },
         "eps": {
          "path": "icons/eps/cultural-cinema.eps",
-         "size": 395718
+         "size": 3901
         },
         "pdf": {
          "path": "icons/pdf/cultural-cinema.pdf",
-         "size": 27552
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/cultural-cinema.svg",
-         "size": 1002
+         "size": 1512
         }
        }
       }
@@ -479,23 +422,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-orthodox.svg",
-         "size": 2285
+         "size": 2175
         },
         "png": {
          "path": "icons/png/church-orthodox.png",
-         "size": 24660
+         "size": 16470
         },
         "eps": {
          "path": "icons/eps/church-orthodox.eps",
-         "size": 398970
+         "size": 5926
         },
         "pdf": {
          "path": "icons/pdf/church-orthodox.pdf",
-         "size": 27959
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-orthodox.svg",
-         "size": 2196
+         "size": 2182
         }
        }
       },
@@ -507,23 +446,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-orthodox-monastery.svg",
-         "size": 1396
+         "size": 1286
         },
         "png": {
          "path": "icons/png/church-orthodox-monastery.png",
-         "size": 18625
+         "size": 10563
         },
         "eps": {
          "path": "icons/eps/church-orthodox-monastery.eps",
-         "size": 396870
+         "size": 4524
         },
         "pdf": {
          "path": "icons/pdf/church-orthodox-monastery.pdf",
-         "size": 27775
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-orthodox-monastery.svg",
-         "size": 1307
+         "size": 1727
         }
        }
       }
@@ -543,23 +478,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-catholic.svg",
-         "size": 994
+         "size": 884
         },
         "png": {
          "path": "icons/png/church-catholic.png",
-         "size": 20278
+         "size": 12982
         },
         "eps": {
          "path": "icons/eps/church-catholic.eps",
-         "size": 395610
+         "size": 3854
         },
         "pdf": {
          "path": "icons/pdf/church-catholic.pdf",
-         "size": 27484
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-catholic.svg",
-         "size": 905
+         "size": 1461
         }
        }
       },
@@ -571,23 +502,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-catholic-monastery.svg",
-         "size": 979
+         "size": 869
         },
         "png": {
          "path": "icons/png/church-catholic-monastery.png",
-         "size": 16065
+         "size": 9404
         },
         "eps": {
          "path": "icons/eps/church-catholic-monastery.eps",
-         "size": 395634
+         "size": 3846
         },
         "pdf": {
          "path": "icons/pdf/church-catholic-monastery.pdf",
-         "size": 27527
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-catholic-monastery.svg",
-         "size": 890
+         "size": 1439
         }
        }
       },
@@ -599,23 +526,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-catholic-greek-church.svg",
-         "size": 1565
+         "size": 1455
         },
         "png": {
          "path": "icons/png/church-catholic-greek-church.png",
-         "size": 19732
+         "size": 12219
         },
         "eps": {
          "path": "icons/eps/church-catholic-greek-church.eps",
-         "size": 396846
+         "size": 4708
         },
         "pdf": {
          "path": "icons/pdf/church-catholic-greek-church.pdf",
-         "size": 27651
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-catholic-greek-church.svg",
-         "size": 1476
+         "size": 1742
         }
        }
       },
@@ -627,23 +550,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/church-catholic-greek-monastery.svg",
-         "size": 1603
+         "size": 1493
         },
         "png": {
          "path": "icons/png/church-catholic-greek-monastery.png",
-         "size": 21211
+         "size": 13421
         },
         "eps": {
          "path": "icons/eps/church-catholic-greek-monastery.eps",
-         "size": 396878
+         "size": 4473
         },
         "pdf": {
          "path": "icons/pdf/church-catholic-greek-monastery.pdf",
-         "size": 27772
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/church-catholic-greek-monastery.svg",
-         "size": 1514
+         "size": 1684
         }
        }
       }
@@ -663,23 +582,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/synagogue.svg",
-         "size": 2008
+         "size": 1898
         },
         "png": {
          "path": "icons/png/synagogue.png",
-         "size": 20987
+         "size": 12312
         },
         "eps": {
          "path": "icons/eps/synagogue.eps",
-         "size": 396802
+         "size": 4483
         },
         "pdf": {
          "path": "icons/pdf/synagogue.pdf",
-         "size": 28075
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/synagogue.svg",
-         "size": 1919
+         "size": 1684
         }
        }
       }
@@ -699,23 +614,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/mosque.svg",
-         "size": 1488
+         "size": 1378
         },
         "png": {
          "path": "icons/png/mosque.png",
-         "size": 20701
+         "size": 13075
         },
         "eps": {
          "path": "icons/eps/mosque.eps",
-         "size": 396566
+         "size": 4317
         },
         "pdf": {
          "path": "icons/pdf/mosque.pdf",
-         "size": 27735
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/mosque.svg",
-         "size": 1399
+         "size": 1761
         }
        }
       }
@@ -732,23 +643,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/factory.svg",
-         "size": 658
+         "size": 548
         },
         "png": {
          "path": "icons/png/factory.png",
-         "size": 13930
+         "size": 7356
         },
         "eps": {
          "path": "icons/eps/factory.eps",
-         "size": 394366
+         "size": 3051
         },
         "pdf": {
          "path": "icons/pdf/factory.pdf",
-         "size": 27256
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/factory.svg",
-         "size": 569
+         "size": 1218
         }
        }
       },
@@ -760,23 +667,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/factory-windmill.svg",
-         "size": 1330
+         "size": 1220
         },
         "png": {
          "path": "icons/png/factory-windmill.png",
-         "size": 21340
+         "size": 13473
         },
         "eps": {
          "path": "icons/eps/factory-windmill.eps",
-         "size": 395918
+         "size": 3869
         },
         "pdf": {
          "path": "icons/pdf/factory-windmill.pdf",
-         "size": 27619
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/factory-windmill.svg",
-         "size": 1241
+         "size": 1584
         }
        }
       }
@@ -793,23 +696,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/civil.svg",
-         "size": 1871
+         "size": 1761
         },
         "png": {
          "path": "icons/png/civil.png",
-         "size": 20153
+         "size": 12044
         },
         "eps": {
          "path": "icons/eps/civil.eps",
-         "size": 397850
+         "size": 5060
         },
         "pdf": {
          "path": "icons/pdf/civil.pdf",
-         "size": 28050
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/civil.svg",
-         "size": 1782
+         "size": 2056
         }
        }
       },
@@ -821,23 +720,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/civil-palace.svg",
-         "size": 2316
+         "size": 2206
         },
         "png": {
          "path": "icons/png/civil-palace.png",
-         "size": 19811
+         "size": 10646
         },
         "eps": {
          "path": "icons/eps/civil-palace.eps",
-         "size": 399122
+         "size": 5694
         },
         "pdf": {
          "path": "icons/pdf/civil-palace.pdf",
-         "size": 27790
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/civil-palace.svg",
-         "size": 2227
+         "size": 2104
         }
        }
       },
@@ -849,23 +744,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/civil-homestead.svg",
-         "size": 1871
+         "size": 1761
         },
         "png": {
          "path": "icons/png/civil-homestead.png",
-         "size": 20153
+         "size": 12044
         },
         "eps": {
          "path": "icons/eps/civil-homestead.eps",
-         "size": 397898
+         "size": 5060
         },
         "pdf": {
          "path": "icons/pdf/civil-homestead.pdf",
-         "size": 28071
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/civil-homestead.svg",
-         "size": 1782
+         "size": 2056
         }
        }
       },
@@ -877,23 +768,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/civil-historical-city.svg",
-         "size": 2243
+         "size": 2133
         },
         "png": {
          "path": "icons/png/civil-historical-city.png",
-         "size": 19944
+         "size": 11951
         },
         "eps": {
          "path": "icons/eps/civil-historical-city.eps",
-         "size": 399554
+         "size": 6157
         },
         "pdf": {
          "path": "icons/pdf/civil-historical-city.pdf",
-         "size": 28038
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/civil-historical-city.svg",
-         "size": 2154
+         "size": 2214
         }
        }
       }
@@ -910,23 +797,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/military.svg",
-         "size": 1285
+         "size": 1175
         },
         "png": {
          "path": "icons/png/military.png",
-         "size": 19562
+         "size": 10328
         },
         "eps": {
          "path": "icons/eps/military.eps",
-         "size": 396290
+         "size": 4210
         },
         "pdf": {
          "path": "icons/pdf/military.pdf",
-         "size": 27644
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/military.svg",
-         "size": 1196
+         "size": 1593
         }
        }
       },
@@ -938,23 +821,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/military-castle.svg",
-         "size": 1307
+         "size": 1197
         },
         "png": {
          "path": "icons/png/military-castle.png",
-         "size": 19811
+         "size": 10473
         },
         "eps": {
          "path": "icons/eps/military-castle.eps",
-         "size": 396334
+         "size": 4227
         },
         "pdf": {
          "path": "icons/pdf/military-castle.pdf",
-         "size": 27656
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/military-castle.svg",
-         "size": 1218
+         "size": 1591
         }
        }
       }
@@ -971,23 +850,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/entertainment.svg",
-         "size": 3489
+         "size": 3379
         },
         "png": {
          "path": "icons/png/entertainment.png",
-         "size": 36777
+         "size": 26372
         },
         "eps": {
          "path": "icons/eps/entertainment.eps",
-         "size": 402662
+         "size": 8263
         },
         "pdf": {
          "path": "icons/pdf/entertainment.pdf",
-         "size": 28898
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/entertainment.svg",
-         "size": 3400
+         "size": 3163
         }
        }
       },
@@ -999,23 +874,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/entertainment-attractions.svg",
-         "size": 3489
+         "size": 3379
         },
         "png": {
          "path": "icons/png/entertainment-attractions.png",
-         "size": 36777
+         "size": 26372
         },
         "eps": {
          "path": "icons/eps/entertainment-attractions.eps",
-         "size": 402702
+         "size": 8263
         },
         "pdf": {
          "path": "icons/pdf/entertainment-attractions.pdf",
-         "size": 28922
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/entertainment-attractions.svg",
-         "size": 3400
+         "size": 3163
         }
        }
       }
@@ -1032,23 +903,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/flora.svg",
-         "size": 1471
+         "size": 1361
         },
         "png": {
          "path": "icons/png/flora.png",
-         "size": 30725
+         "size": 22059
         },
         "eps": {
          "path": "icons/eps/flora.eps",
-         "size": 397110
+         "size": 4299
         },
         "pdf": {
          "path": "icons/pdf/flora.pdf",
-         "size": 27912
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/flora.svg",
-         "size": 1382
+         "size": 1869
         }
        }
       },
@@ -1060,23 +927,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/flora-citypark.svg",
-         "size": 1564
+         "size": 1454
         },
         "png": {
          "path": "icons/png/flora-citypark.png",
-         "size": 26591
+         "size": 17888
         },
         "eps": {
          "path": "icons/eps/flora-citypark.eps",
-         "size": 397126
+         "size": 4419
         },
         "pdf": {
          "path": "icons/pdf/flora-citypark.pdf",
-         "size": 27952
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/flora-citypark.svg",
-         "size": 1475
+         "size": 1881
         }
        }
       },
@@ -1088,23 +951,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/flora-denropark.svg",
-         "size": 1979
+         "size": 1869
         },
         "png": {
          "path": "icons/png/flora-denropark.png",
-         "size": 34354
+         "size": 25051
         },
         "eps": {
          "path": "icons/eps/flora-denropark.eps",
-         "size": 398062
+         "size": 5123
         },
         "pdf": {
          "path": "icons/pdf/flora-denropark.pdf",
-         "size": 28107
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/flora-denropark.svg",
-         "size": 1890
+         "size": 2163
         }
        }
       },
@@ -1116,23 +975,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/flora-forest.svg",
-         "size": 1471
+         "size": 1361
         },
         "png": {
          "path": "icons/png/flora-forest.png",
-         "size": 30725
+         "size": 22059
         },
         "eps": {
          "path": "icons/eps/flora-forest.eps",
-         "size": 397150
+         "size": 4299
         },
         "pdf": {
          "path": "icons/pdf/flora-forest.pdf",
-         "size": 27925
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/flora-forest.svg",
-         "size": 1382
+         "size": 1869
         }
        }
       }
@@ -1149,23 +1004,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/fauna.svg",
-         "size": 1598
+         "size": 1488
         },
         "png": {
          "path": "icons/png/fauna.png",
-         "size": 25200
+         "size": 16417
         },
         "eps": {
          "path": "icons/eps/fauna.eps",
-         "size": 396910
+         "size": 4362
         },
         "pdf": {
          "path": "icons/pdf/fauna.pdf",
-         "size": 27946
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/fauna.svg",
-         "size": 1509
+         "size": 1878
         }
        }
       },
@@ -1177,23 +1028,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/fauna-zoo.svg",
-         "size": 1894
+         "size": 1784
         },
         "png": {
          "path": "icons/png/fauna-zoo.png",
-         "size": 24975
+         "size": 16471
         },
         "eps": {
          "path": "icons/eps/fauna-zoo.eps",
-         "size": 398046
+         "size": 5001
         },
         "pdf": {
          "path": "icons/pdf/fauna-zoo.pdf",
-         "size": 28195
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/fauna-zoo.svg",
-         "size": 1805
+         "size": 2144
         }
        }
       },
@@ -1205,23 +1052,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/fauna-animal-in-nature.svg",
-         "size": 1598
+         "size": 1488
         },
         "png": {
          "path": "icons/png/fauna-animal-in-nature.png",
-         "size": 25195
+         "size": 16417
         },
         "eps": {
          "path": "icons/eps/fauna-animal-in-nature.eps",
-         "size": 396986
+         "size": 4362
         },
         "pdf": {
          "path": "icons/pdf/fauna-animal-in-nature.pdf",
-         "size": 27985
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/fauna-animal-in-nature.svg",
-         "size": 1509
+         "size": 1878
         }
        }
       }
@@ -1241,23 +1084,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/land-object.svg",
-         "size": 720
+         "size": 610
         },
         "png": {
          "path": "icons/png/land-object.png",
-         "size": 23821
+         "size": 15053
         },
         "eps": {
          "path": "icons/eps/land-object.eps",
-         "size": 394550
+         "size": 3065
         },
         "pdf": {
          "path": "icons/pdf/land-object.pdf",
-         "size": 27394
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/land-object.svg",
-         "size": 631
+         "size": 1315
         }
        }
       }
@@ -1274,23 +1113,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/water-object.svg",
-         "size": 1777
+         "size": 1667
         },
         "png": {
          "path": "icons/png/water-object.png",
-         "size": 28184
+         "size": 19859
         },
         "eps": {
          "path": "icons/eps/water-object.eps",
-         "size": 397250
+         "size": 4476
         },
         "pdf": {
          "path": "icons/pdf/water-object.pdf",
-         "size": 27999
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/water-object.svg",
-         "size": 1688
+         "size": 1926
         }
        }
       },
@@ -1302,23 +1137,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/water-object-lake.svg",
-         "size": 1777
+         "size": 1667
         },
         "png": {
          "path": "icons/png/water-object-lake.png",
-         "size": 28184
+         "size": 19859
         },
         "eps": {
          "path": "icons/eps/water-object-lake.eps",
-         "size": 397282
+         "size": 4476
         },
         "pdf": {
          "path": "icons/pdf/water-object-lake.pdf",
-         "size": 28009
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/water-object-lake.svg",
-         "size": 1688
+         "size": 1926
         }
        }
       }
@@ -1335,23 +1166,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/viewpoint.svg",
-         "size": 919
+         "size": 809
         },
         "png": {
          "path": "icons/png/viewpoint.png",
-         "size": 31163
+         "size": 20365
         },
         "eps": {
          "path": "icons/eps/viewpoint.eps",
-         "size": 395222
+         "size": 3409
         },
         "pdf": {
          "path": "icons/pdf/viewpoint.pdf",
-         "size": 27491
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/viewpoint.svg",
-         "size": 830
+         "size": 1442
         }
        }
       }
@@ -1368,23 +1195,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/default.svg",
-         "size": 1187
+         "size": 1077
         },
         "png": {
          "path": "icons/png/default.png",
-         "size": 28478
+         "size": 19585
         },
         "eps": {
          "path": "icons/eps/default.eps",
-         "size": 396090
+         "size": 4003
         },
         "pdf": {
          "path": "icons/pdf/default.pdf",
-         "size": 27593
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/default.svg",
-         "size": 1098
+         "size": 1514
         }
        }
       }
@@ -1407,23 +1230,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/UNESCO.svg",
-         "size": 3849
+         "size": 3754
         },
         "png": {
          "path": "icons/png/UNESCO.png",
-         "size": 32906
+         "size": 24018
         },
         "eps": {
          "path": "icons/eps/UNESCO.eps",
-         "size": 366082
+         "size": 8972
         },
         "pdf": {
          "path": "icons/pdf/UNESCO.pdf",
-         "size": 28621
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/UNESCO.svg",
-         "size": 3775
+         "size": 3230
         }
        }
       }
@@ -1440,23 +1259,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/dart-recommend.svg",
-         "size": 5348
+         "size": 5253
         },
         "png": {
          "path": "icons/png/dart-recommend.png",
-         "size": 37878
+         "size": 26746
         },
         "eps": {
          "path": "icons/eps/dart-recommend.eps",
-         "size": 384354
+         "size": 10377
         },
         "pdf": {
          "path": "icons/pdf/dart-recommend.pdf",
-         "size": 29789
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/dart-recommend.svg",
-         "size": 5274
+         "size": 3973
         }
        }
       },
@@ -1468,23 +1283,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/dart-top100.svg",
-         "size": 4360
+         "size": 4265
         },
         "png": {
          "path": "icons/png/dart-top100.png",
-         "size": 34480
+         "size": 24165
         },
         "eps": {
          "path": "icons/eps/dart-top100.eps",
-         "size": 374706
+         "size": 9108
         },
         "pdf": {
          "path": "icons/pdf/dart-top100.pdf",
-         "size": 29390
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/dart-top100.svg",
-         "size": 4286
+         "size": 3527
         }
        }
       },
@@ -1496,23 +1307,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/dart-top30.svg",
-         "size": 4370
+         "size": 4275
         },
         "png": {
          "path": "icons/png/dart-top30.png",
-         "size": 34662
+         "size": 24002
         },
         "eps": {
          "path": "icons/eps/dart-top30.eps",
-         "size": 374954
+         "size": 9120
         },
         "pdf": {
          "path": "icons/pdf/dart-top30.pdf",
-         "size": 29488
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/dart-top30.svg",
-         "size": 4296
+         "size": 3601
         }
        }
       },
@@ -1524,23 +1331,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/dart-top10.svg",
-         "size": 4144
+         "size": 4049
         },
         "png": {
          "path": "icons/png/dart-top10.png",
-         "size": 33435
+         "size": 23369
         },
         "eps": {
          "path": "icons/eps/dart-top10.eps",
-         "size": 374226
+         "size": 8587
         },
         "pdf": {
          "path": "icons/pdf/dart-top10.pdf",
-         "size": 29362
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/dart-top10.svg",
-         "size": 4070
+         "size": 3372
         }
        }
       }
@@ -1563,23 +1366,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-fuel.svg",
-         "size": 1191
+         "size": 1081
         },
         "png": {
          "path": "icons/png/service-fuel.png",
-         "size": 9754
+         "size": 9646
         },
         "eps": {
          "path": "icons/eps/service-fuel.eps",
-         "size": 292854
+         "size": 4000
         },
         "pdf": {
          "path": "icons/pdf/service-fuel.pdf",
-         "size": 27739
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-fuel.svg",
-         "size": 1102
+         "size": 1634
         }
        }
       },
@@ -1591,23 +1390,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-charger.svg",
-         "size": 1260
+         "size": 1150
         },
         "png": {
          "path": "icons/png/service-charger.png",
-         "size": 9175
+         "size": 8673
         },
         "eps": {
          "path": "icons/eps/service-charger.eps",
-         "size": 293098
+         "size": 4153
         },
         "pdf": {
          "path": "icons/pdf/service-charger.pdf",
-         "size": 27769
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-charger.svg",
-         "size": 1171
+         "size": 1664
         }
        }
       },
@@ -1619,23 +1414,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-gas.svg",
-         "size": 1197
+         "size": 1087
         },
         "png": {
          "path": "icons/png/service-gas.png",
-         "size": 9563
+         "size": 8943
         },
         "eps": {
          "path": "icons/eps/service-gas.eps",
-         "size": 292858
+         "size": 4001
         },
         "pdf": {
          "path": "icons/pdf/service-gas.pdf",
-         "size": 27739
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-gas.svg",
-         "size": 1108
+         "size": 1637
         }
        }
       },
@@ -1647,23 +1438,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-sto.svg",
-         "size": 644
+         "size": 534
         },
         "png": {
          "path": "icons/png/service-sto.png",
-         "size": 6708
+         "size": 4938
         },
         "eps": {
          "path": "icons/eps/service-sto.eps",
-         "size": 291338
+         "size": 3243
         },
         "pdf": {
          "path": "icons/pdf/service-sto.pdf",
-         "size": 27409
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-sto.svg",
-         "size": 555
+         "size": 1304
         }
        }
       },
@@ -1675,23 +1462,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-cafe.svg",
-         "size": 907
+         "size": 797
         },
         "png": {
          "path": "icons/png/service-cafe.png",
-         "size": 9897
+         "size": 9292
         },
         "eps": {
          "path": "icons/eps/service-cafe.eps",
-         "size": 291910
+         "size": 3478
         },
         "pdf": {
          "path": "icons/pdf/service-cafe.pdf",
-         "size": 27557
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-cafe.svg",
-         "size": 818
+         "size": 1434
         }
        }
       },
@@ -1703,23 +1486,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-hotel.svg",
-         "size": 780
+         "size": 670
         },
         "png": {
          "path": "icons/png/service-hotel.png",
-         "size": 6427
+         "size": 4566
         },
         "eps": {
          "path": "icons/eps/service-hotel.eps",
-         "size": 291438
+         "size": 3337
         },
         "pdf": {
          "path": "icons/pdf/service-hotel.pdf",
-         "size": 27424
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-hotel.svg",
-         "size": 691
+         "size": 1325
         }
        }
       },
@@ -1731,23 +1510,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-camping.svg",
-         "size": 1200
+         "size": 1090
         },
         "png": {
          "path": "icons/png/service-camping.png",
-         "size": 9917
+         "size": 10402
         },
         "eps": {
          "path": "icons/eps/service-camping.eps",
-         "size": 291906
+         "size": 3648
         },
         "pdf": {
          "path": "icons/pdf/service-camping.pdf",
-         "size": 27489
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-camping.svg",
-         "size": 1111
+         "size": 1363
         }
        }
       },
@@ -1759,23 +1534,19 @@
        "files": {
         "svg": {
          "path": "icons/svg/service-child-zone.svg",
-         "size": 765
+         "size": 655
         },
         "png": {
          "path": "icons/png/service-child-zone.png",
-         "size": 8955
+         "size": 8236
         },
         "eps": {
          "path": "icons/eps/service-child-zone.eps",
-         "size": 291714
+         "size": 3364
         },
         "pdf": {
          "path": "icons/pdf/service-child-zone.pdf",
-         "size": 27519
-        },
-        "svg-transparent": {
-         "path": "icons/svg-transparent/service-child-zone.svg",
-         "size": 676
+         "size": 1373
         }
        }
       }

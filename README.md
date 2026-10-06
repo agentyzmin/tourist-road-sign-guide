@@ -16,7 +16,7 @@
 | `docs/appendix-a-icons.md` | Додаток А: бібліотека піктограм (блок між `<!-- icons:start -->` і `<!-- icons:end -->` генерується скриптом) |
 | `docs/_sidebar.md` | Зміст у бічній панелі |
 | `docs/assets/img/<розділ>/` | Ілюстрації (PNG з InDesign-макета) |
-| `docs/icons/` | Піктограми: `svg/`, `png/`, `eps/`, `pdf/`, `svg-transparent/`, повний набір в `all/`, архіви в `zip/` |
+| `docs/icons/` | Піктограми: `svg/`, `png/`, `eps/`, `pdf/` без тла (піктограма на прозорому фоні), робочий аркуш з тлом в `all/`, архіви в `zip/` |
 | `docs/data/icons.json` | Каталог піктограм (назви, групи, файли) |
 | `docs/css/style.css` | Стилі поверх теми docsify-themeable |
 | `docs/js/guide.js` | Ядро: реєстрація модулів, якорі на нумерованих абзацах, lazy-loading |
@@ -46,9 +46,11 @@ cd docs && python3 -m http.server 8765
 Джерело: Shared drive A3 → `Projects/Road Wayfinding/Stage 8. Tourism wayfinding feat DART/7. Production/Icons` (57 піктограм × SVG/PNG/EPS/PDF + DWG + AI). Каталог назв і груп описано у `SECTIONS` всередині скрипта.
 
 ```bash
-python3 scripts/build-icons.py            # копіює з Drive, збирає все
+DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 scripts/build-icons.py   # з Drive: прибирає тло, генерує SVG/PNG/EPS/PDF
 python3 scripts/build-icons.py --no-copy  # лише перегенерувати json, zip і markdown
 ```
+
+Скрипту потрібні `pip install cairosvg` і `brew install cairo`. Тло прибирається з SVG, з нього рендеряться PNG (розмір як у продакшн-PNG) і векторні PDF та EPS (розмір артборду, 1 одиниця SVG = 1 pt, без запасу під обріз).
 
 Нова піктограма: додати файл у Production/Icons у всіх форматах, додати запис у `SECTIONS`, запустити скрипт, закомітити.
 

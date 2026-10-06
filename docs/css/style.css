@@ -982,6 +982,7 @@ input[type="file"] {
     width: 4em;
     height: 4em;
     border-radius: 0.35em;
+    background-color: #592d2c; /* icon files have no background */
 }
 .category-item strong, .service-item strong {
     display: block;
@@ -1065,6 +1066,7 @@ input[type="file"] {
     max-height: 100%;
     object-fit: contain;
     border-radius: 0.35em;
+    background-color: #592d2c; /* icon files have no background */
     box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 .icon-card--badge .icon-card__preview img { width: 100%; }
@@ -1309,22 +1311,22 @@ body[data-page="icons"] .markdown-section { max-width: 72em; }
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.45em;
-    padding: 0.6em 0.6em 0.7em;
+    gap: 0.5em;
+    padding: 0.9em 0.8em 0.8em;
     font: inherit;
     text-align: center;
-    color: var(--base-color);
-    background: #fff;
-    border: 1px solid var(--mono-tint2);
+    color: #fff;
+    background: #592d2c;
+    border: none;
     border-radius: 0.55em;
     cursor: pointer;
     opacity: 1;
-    transition: border-color 120ms, box-shadow 120ms, transform 120ms;
+    transition: background-color 120ms, box-shadow 120ms, transform 120ms;
 }
 .lib-tile[hidden] { display: none; }
 .lib-tile:hover, .lib-tile:focus-visible {
-    border-color: var(--theme-color);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background-color: #6d3836;
+    box-shadow: 0 4px 14px rgba(89,45,44,0.35);
     transform: translateY(-1px);
     opacity: 1;
     outline: none;
@@ -1341,12 +1343,12 @@ body[data-page="icons"] .markdown-section { max-width: 72em; }
     width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 0.3em;
 }
 
 .lib-tile__name {
     font-size: 0.72em;
     font-weight: 700;
+    color: rgba(255,255,255,0.9);
     line-height: 1.25;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1389,42 +1391,21 @@ body[data-page="icons"] .markdown-section { max-width: 72em; }
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.2em;
+    padding: 2em;
     border-radius: 0.6em;
-    background:
-        linear-gradient(to right, var(--mono-tint2) 1px, transparent 1px) 0 0 / 10% 10%,
-        linear-gradient(to bottom, var(--mono-tint2) 1px, transparent 1px) 0 0 / 10% 10%,
-        var(--mono-tint3);
+    background: #592d2c;
     aspect-ratio: 1 / 1;
 }
 .lib-dialog__preview--badge { aspect-ratio: auto; min-height: 12em; }
-.lib-dialog__preview.is-transparent {
-    background-color: #3b3b3b;
-    background-image:
-        linear-gradient(45deg, #4a4a4a 25%, transparent 25%, transparent 75%, #4a4a4a 75%),
-        linear-gradient(45deg, #4a4a4a 25%, transparent 25%, transparent 75%, #4a4a4a 75%);
-    background-size: 1.2em 1.2em;
-    background-position: 0 0, 0.6em 0.6em;
-}
-.lib-dialog__preview img { width: 100%; max-height: 100%; object-fit: contain; border-radius: 0.4em; }
+
+.lib-dialog__preview img { width: 100%; max-height: 100%; object-fit: contain; }
+.lib-dialog__note { font-size: 0.72em; color: var(--mono-shade1); margin: 0.6em 0 0 !important; line-height: 1.35; }
 .lib-dialog__body { display: flex; flex-direction: column; min-width: 0; }
 .lib-dialog__kind { font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.04em; color: var(--mono-shade1); margin: 0 2.2em 0.4em 0; }
 .lib-dialog__name { font-size: 1.35em; line-height: 1.2; margin: 0 0 0.2em; }
 .lib-dialog__en, .lib-dialog__also { font-size: 0.85em; color: var(--mono-shade1); margin: 0 0 0.3em; }
-.lib-dialog__bg { display: flex; gap: 0.3em; margin: 0.9em 0 0.2em; }
-.lib-bg {
-    font: inherit;
-    font-size: 0.75em;
-    font-weight: 700;
-    padding: 0.3em 0.7em;
-    border-radius: 2em;
-    border: 1px solid var(--mono-tint1);
-    background: #fff;
-    color: var(--base-color);
-    cursor: pointer;
-}
-.lib-bg.is-active { background: var(--base-color); border-color: var(--base-color); color: #fff; }
-.lib-dialog__label { font-size: 0.75em; font-weight: 700; margin: 1.2em 0 0.4em !important; }
+
+.lib-dialog__label { font-size: 0.75em; font-weight: 700; margin: 1.4em 0 0.4em !important; }
 .lib-dialog__files {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6.5em, 1fr));
