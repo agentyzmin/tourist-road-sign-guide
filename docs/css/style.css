@@ -1231,7 +1231,7 @@ input[type="file"] {
 @media screen and (max-width: 768px) {
     :root { --base-font-size: 1.05em; }
     .markdown-section > h1:first-child { margin-top: 1.4em; }
-    .sign-matrix { font-size: 0.7em; }
+    .sign-matrix { font-size: 0.7em; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .icon-card { width: calc(50% - 0.5em); }
     .icon-card--badge { width: 100%; }
 }
