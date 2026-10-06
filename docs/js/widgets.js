@@ -1,12 +1,13 @@
 /* Interactive widgets: POI significance calculator (2.1), sign-type matrix and
- * cross-chapter navigation (4.1 / A1…C3), transliteration (6.3), feedback form. */
+ * cross-chapter navigation (4.1 / A1…C3), transliteration (6.3). Feedback form is disabled. */
 (function () {
   'use strict';
 
   var GENERATOR = 'https://touristroadsign.a3.kyiv.ua/';
-  /* Formspree-style endpoint. Leave empty to fall back to a mailto: draft. */
-  var FEEDBACK_ENDPOINT = '';
-  var FEEDBACK_EMAIL = 'tourism@a3.kyiv.ua';
+  /* Feedback form is disabled. To re-enable: uncomment the constants below, the
+   * feedbackForm() block and its line in init(), and the placeholder in index.md. */
+  // var FEEDBACK_ENDPOINT = ''; // Formspree-style endpoint; empty = mailto: fallback
+  // var FEEDBACK_EMAIL = 'tourism@a3.kyiv.ua';
 
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
@@ -221,7 +222,8 @@
     host.appendChild(copy);
   }
 
-  /* ------------------------------------------------------------ feedback form */
+  /* ------------------------------------------------------------ feedback form (disabled)
+  / * ------------------------------------------------------------ feedback form * /
   function feedbackForm(host) {
     if (host.dataset.ready) return;
     host.dataset.ready = '1';
@@ -265,6 +267,7 @@
       }).then(function () { submit.disabled = false; });
     });
   }
+  */
 
   /* ------------------------------------------------------------ register */
   window.GuideModules.register({
@@ -272,7 +275,7 @@
     init: function (root) {
       root.querySelectorAll('[data-widget="poi-calc"]').forEach(poiCalculator);
       root.querySelectorAll('[data-widget="translit"]').forEach(translitWidget);
-      root.querySelectorAll('[data-widget="feedback"]').forEach(feedbackForm);
+      // root.querySelectorAll('[data-widget="feedback"]').forEach(feedbackForm);
       signMatrix(root);
       signNavigation(root);
     },
