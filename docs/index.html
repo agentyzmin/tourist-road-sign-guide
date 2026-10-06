@@ -1,175 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <title>Туристична навігація на дорогах України: системний путівник</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Цей путівник допомагатиме проєктувальникам розробляти туристичні знаки, що утворюватимуть передбачуваний, зрозумілий і корисний інформаційний шар. Таким чином ми допоможемо автомобілістам, які бажають відвідати нові для себе місця, робити приємні відкриття і пізнавати Україну. А тим, хто точно знають, що саме хочуть відвідати, допоможемо комфортно і безпечно дістатися цих місць.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <meta name="description" content="Путівник для проєктувальників туристичних дорожніх знаків: типи об’єктів, типи знаків, розміщення, елементи, побудова та бібліотека піктограм.">
 
-  <!-- OG -->
-  <meta property="og:title" content="Туристична навігація на дорогах України: системний путівник"/>
-  <meta property="og:description" content="Цей путівник допомагатиме проєктувальникам розробляти туристичні знаки, що утворюватимуть передбачуваний, зрозумілий і корисний інформаційний шар. Таким чином ми допоможемо автомобілістам, які бажають відвідати нові для себе місця, робити приємні відкриття і пізнавати Україну. А тим, хто точно знають, що саме хочуть відвідати, допоможемо комфортно і безпечно дістатися цих місць."/>
-  <meta property="og:url" content="https://touristroadguide.a3.kyiv.ua"/>
-  <meta property="og:type" content="website"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Туристична навігація на дорогах України: системний путівник">
+  <meta property="og:description" content="Путівник для проєктувальників туристичних дорожніх знаків: типи об’єктів, типи знаків, розміщення, елементи, побудова та бібліотека піктограм.">
+  <meta property="og:url" content="https://touristroadguide.a3.kyiv.ua/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:image" content="https://touristroadguide.a3.kyiv.ua/assets/img/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Туристична навігація на дорогах України: системний путівник">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <meta property="og:image" content="img/og-image.jpg"/>
-  <meta property="og:image:secure_url" content="img/og-image.jpg"/>
-  <meta property="og:image:type" content="image/jpeg"/>
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="640"/>
-  <meta property="og:image:alt" content="Туристична навігація на дорогах України: системний путівник"/>
-
-
-  <!-- Theme: Defaults -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
-<!--     <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
-    /> -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dmhendricks/bootstrap-grid-css@4.1.3/dist/css/bootstrap-grid.min.css" />
-  <!-- <link rel="stylesheet" href="https://agentyzmin.github.io/Road-UA-Font/fonts/road-ua.css"> -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-defaults.css">
   <link rel="stylesheet" href="https://cdn.a3.kyiv.ua/RoadUI/WEB/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#61322D">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#61322D">
   <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-
 </head>
 <body>
 
-
-
-<!-- FEEDBACK -->
-
-<script type="text/javascript">
-
-// function showDiv() {
-//    document.getElementById('modal').style.display = "block";
-// }
-
-// function hideDiv() {
-//    document.getElementById('modal').style.display = "none";
-// }
-
-</script>
-
-
-<!-- <div class="feedback-popup" id="modal" style="display: none;">
-  
-  <a style="cursor: pointer;" onclick="hideDiv()">
-    <div class="feedback-popup-close">
-    <svg class="w-100" viewBox="0 0 31.11 31.11">
-      <rect x="13.56" y="-4.44" transform="matrix(0.7071 0.7071 -0.7071 0.7071 15.5563 -6.4437)" fill="#8F9099" width="4" height="40"/>
-      <rect x="13.56" y="-4.44" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 37.5564 15.5563)" fill="#8F9099" width="4" height="40"/>
-    </svg>
-  </div>
-  </a>
-  
-  <h2>Зворотній зв’язок</h2>
-  
-  <p>Заохочуємо до&nbsp;обговорення через цю форму або через пошту <a href="mailto:tourism@a3.kyiv.ua">tourism@a3.kyiv.ua</a>.</p>
-
-
-  <form action="https://mailthis.to/tourism@a3.kyiv.ua"
-    method="POST" encType="multipart/form-data" data-netlify="true" name="road-feedback">
-        
-        <input type="hidden" name="_subject" value="Feedback">
-        
-        <div class="form-line">
-          <label for="message" class="">Повідомлення</label>
-          <textarea name="message" rows="6" style="width: 100%;"></textarea>
-        </div>
-
-        <div class="form-line">
-          <label for="file" class="line">Прикласти файл:</label>
-          <input type="file" id="file" class="file" name="file">
-        </div>
-
-        <div class="form-line">
-          <label for="email" class="line">Пошта:</label>
-          <input type="email" class="form-control" name="_replyto">
-        </div>
-
-        <input type="hidden" name="_honeypot" value="">
-        
-        <input type="hidden" name="_confirmation" value="Дякуємо за зворотній зв’язок! Слідкуйте за ходом проекту на сайті — a3.kyiv.ua/projects/road-wayfinding , у фейсбуці та телеграмі.">
-        
-        <button type="submit" class="">Надіслати</button>
-
-      </form>
-
-</div> -->
-
-
-<!-- <a style="cursor: pointer;" onclick="showDiv()">
-  <div class="feedback-button">
-  <img width="100%" src="assets/img/mail.svg">
-  </div>
-</a> -->
-
-
-<!-- FEEDBACK END -->
-
-
 <div id="app"></div>
+
 <script>
   window.$docsify = {
+    name: 'Туристична навігація',
+    nameLink: '/',
     homepage: 'index.md',
     loadSidebar: '_sidebar.md',
-    autoHeader: true,
-    // search: 'auto',
+    autoHeader: false,
+    auto2top: true,
+    sidebarDisplayLevel: 1,
+    notFoundPage: '404.md',
+    executeScript: true,
     search: {
       paths: 'auto',
       placeholder: 'Пошук',
-      depth: 2,
+      depth: 3,
       noData: 'Нічого не знайшли',
     },
-    // basePath: 'touristroadguide.a3.kyiv.ua/guide',
-    // name: 'Путівник',
-    // logo: '/_media/icon.svg',
-    // themeColor: '#3F51B5',
-    // hideSidebar: true,
-    // loadNavbar: true,
-    sidebarDisplayLevel: 1,
-    notFoundPage: '404.md',
     themeable: {
-        readyTransition : true, // default
-        responsiveTables: true  // default
+      readyTransition: true,
+      responsiveTables: true,
     },
     alias: {
-      '/.*/_sidebar.md'     : '/_sidebar.md',
-      // '/docs/_sidebar.md'   : '/_sidebar.md',
-      '/icons'              : '/appendix-a-icons'
+      '/.*/_sidebar.md': '/_sidebar.md',
+      '/icons': '/appendix-a-icons',
     },
-    // ga: 'G-KX64DPWJ1Q',
     pagination: {
       previousText: 'Назад',
       nextText: 'Далі',
-      // crossChapter: true,
-      // crossChapterText: true,
+      crossChapter: true,
     },
-  }
+    plugins: [],
+  };
 </script>
-<!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<!-- docsify-themeable (latest v0.x.x) -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-<!-- plugins -->
-<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+<!-- Docsify core (pinned) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/js/docsify-themeable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/zoom-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@1.3.5/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+
+<!-- Guide modules -->
+<script src="js/guide.js"></script>
 
 </body>
 </html>

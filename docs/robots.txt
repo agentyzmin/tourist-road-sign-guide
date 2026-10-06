@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://touristroadguide.a3.kyiv.ua/sitemap.xml
